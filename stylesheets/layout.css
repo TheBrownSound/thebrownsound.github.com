@@ -79,6 +79,10 @@ h3 {
   color: #ccece1;
 }
 
+#footer a:hover {
+  color: inherit;
+}
+
 #footer-nav {
   font-size: 1.1em;
   font-weight: bold;
