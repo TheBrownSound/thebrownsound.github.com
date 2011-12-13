@@ -42,6 +42,11 @@ h3 {
 	margin-right: 10px;
 }
 
+#projects {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 #projects .project_icon {
 	float: left;
 }
@@ -50,12 +55,24 @@ h3 {
 	margin-left: 80px;
 }
 
-#footer {
+#footer-wrap {
 	-webkit-box-shadow: inset 0px 5px 5px 0px #333;
 	-moz-box-shadow: inset 0px 5px 5px 0px #333;
 	box-shadow: inset 0px 5px 5px 0px #333;
 	background-color: #383b3d;
-	min-height: 200px;
+	padding: 10px 0px;
+}
+
+#footer {
+  color: #FFF;
+}
+
+#footer p {
+  margin-top: 20px;
+}
+
+#footer a {
+  color: #ccece1;
 }
 
 /* #Page Styles
