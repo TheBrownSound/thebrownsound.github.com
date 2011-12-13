@@ -109,6 +109,15 @@ h3 {
 		#header h2 {
 			font-size: 1.4em;
 		}
+		
+		#footer, #footer-nav {
+      text-align: center;
+    }
+    
+    #footer-nav ul li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
