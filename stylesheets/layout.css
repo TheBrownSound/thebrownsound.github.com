@@ -75,24 +75,38 @@ h3 {
   margin-top: 20px;
 }
 
-#footer a {
-  color: #ccece1;
-}
-
-#footer a:hover {
-  color: inherit;
-}
-
 #footer-nav {
   font-size: 1.1em;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 21px;
   text-align: right;
 }
 
 #footer-nav ul li {
   display: inline-block;
+  height: 40px;
   margin-left: 20px;
+}
+
+a.footer-button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  
+  display: inline-block;
+  background-color: #FFF;
+  color: #383b3d;
+  font-size: 26px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+}
+
+a.footer-button:hover {
+  background-color: #CCC;
 }
 
 /* #Page Styles
