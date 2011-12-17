@@ -71,14 +71,6 @@ h3 {
   color: #FFF;
 }
 
-#footer a {
-  color: #999;
-}
-
-#footer a:hover {
-  color: #CCC;
-}
-
 #footer p {
   margin-top: 20px;
 }
@@ -108,7 +100,7 @@ a.footer-button {
   border-radius: 4px;
   
   display: inline-block;
-  background-color: #999;
+  background-color: #20ad83;
   font-size: 26px;
   font-weight: 700;
   height: 40px;
@@ -119,7 +111,7 @@ a.footer-button {
 }
 
 a.footer-button:hover {
-  background-color: #CCC;
+  background-color: #14d099;
 }
 
 /* #Page Styles
