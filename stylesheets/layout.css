@@ -71,20 +71,34 @@ h3 {
   color: #FFF;
 }
 
+#footer a {
+  color: #999;
+}
+
+#footer a:hover {
+  color: #CCC;
+}
+
 #footer p {
   margin-top: 20px;
 }
 
 #footer-nav {
+  float: right;
   font-size: 1.1em;
   font-weight: bold;
   margin-top: 21px;
   text-align: right;
 }
 
+#footer-nav ul {
+  margin-bottom: 0px;
+}
+
 #footer-nav ul li {
   display: inline-block;
   height: 40px;
+  margin-bottom: 0px;
   margin-left: 20px;
 }
 
@@ -94,8 +108,7 @@ a.footer-button {
   border-radius: 4px;
   
   display: inline-block;
-  background-color: #FFF;
-  color: #383b3d;
+  background-color: #999;
   font-size: 26px;
   font-weight: 700;
   height: 40px;
