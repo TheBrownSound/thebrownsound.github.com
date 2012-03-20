@@ -257,6 +257,40 @@ ul li {
   z-index: -1;
 }
 
+#skill-list {
+  border-left: 4px solid;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#skill-list li {
+  background-color: #789b8f;
+  color: #FFF;
+  line-height: 22px;
+  padding: 10px 10px 10px 20px;
+  
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 21px;
+  -moz-border-radius-bottomright: 21px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 0px 21px 21px 0px;
+  border-radius: 0px 21px 21px 0px;
+}
+
+#skill-list li .rating {
+  background: #FFF;
+  color: #789b8f;
+  float: right;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+}
+
 /* #bxSlider
 ================================================== */
 .bx-pager {
