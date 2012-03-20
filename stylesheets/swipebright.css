@@ -102,6 +102,15 @@ ul {
   width: 100%;
 }
 
+#footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#footer p {
+  color: #142737;
+}
+
 /* #Media Queries
 ================================================== */
 
