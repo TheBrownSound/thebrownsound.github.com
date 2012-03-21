@@ -69,7 +69,7 @@ ul {
 #info a.button {
   background-image: url("../images/swipebright/app_icon.png");
   background-repeat: no-repeat;
-  background-position: 190px 4px;
+  background-position: 170px 4px;
   
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -79,8 +79,7 @@ ul {
   height: 41px;
   margin-top: 40px;
   padding: 12px 69px 12px 12px;
-  text-align: center;
-  width: 170px;
+  width: 150px;
 }
 
 #info a.button em {
