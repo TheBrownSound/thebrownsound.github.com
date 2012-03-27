@@ -56,6 +56,10 @@ ul li {
   position: relative;
 }
 
+.column, .columns {
+  margin-bottom: 10px;
+}
+
 /* #Page Styles
 ================================================== */
 
@@ -266,15 +270,15 @@ ul li {
 #skill-list li {
   background-color: #789b8f;
   color: #FFF;
-  line-height: 22px;
-  padding: 10px 10px 10px 20px;
+  line-height: 18px;
+  padding: 6px 6px 6px 12px;
   
   -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright: 21px;
-  -moz-border-radius-bottomright: 21px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
   -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 0px 21px 21px 0px;
-  border-radius: 0px 21px 21px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 15px 15px 0px;
 }
 
 #skill-list li .rating {
@@ -282,8 +286,8 @@ ul li {
   color: #789b8f;
   float: right;
   font-weight: bold;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   text-align: center;
   
   -webkit-border-radius: 11px;
