@@ -21,6 +21,13 @@ h3 {
 	border-bottom: 2px dotted #777;
 }
 
+ul li {
+  position: relative;
+}
+
+/* #Page Styles
+================================================== */
+
 #header {
 	text-align: center;
 	padding-bottom: 30px;
@@ -40,10 +47,6 @@ h3 {
 #header h1 {
 	font-weight: bold;
 	margin-right: 10px;
-}
-
-#characters {
-  text-align: center;
 }
 
 #projects {
@@ -114,8 +117,12 @@ a.footer-button:hover {
   background-color: #14d099;
 }
 
-/* #Page Styles
-================================================== */
+.fluffy {
+  position: absolute;
+  bottom: -64px;
+  right: 0px;
+  z-index: -1;
+}
 
 /* #Media Queries
 ================================================== */
