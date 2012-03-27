@@ -56,6 +56,11 @@ ul li {
 	margin-right: 10px;
 }
 
+#project-wrap {
+  background-color: #364a41;
+  color: #ccece1;
+}
+
 #projects {
   margin-bottom: 30px;
   margin-top: 30px;
