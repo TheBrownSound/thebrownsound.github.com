@@ -57,8 +57,17 @@ ul li {
 }
 
 #project-wrap {
-  background-color: #364a41;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  background-color: #6e9384;
+  background-image: url("../images/project_bg.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
   color: #ccece1;
+  
+  -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 1);
 }
 
 #projects {
