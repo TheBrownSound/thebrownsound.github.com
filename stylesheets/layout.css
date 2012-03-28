@@ -16,6 +16,13 @@
 
 /* #Site Styles
 ================================================== */
+body {
+  background-color: #ccece1;
+  background-image: url('../images/background_repeat.png');
+  background-position: top center;
+  background-repeat: repeat;
+}
+
 
 h3 {
 	border-bottom: 2px dotted #777;
