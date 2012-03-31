@@ -48,6 +48,10 @@ a.button:hover, a.button:focus {
   border: none;
 }
 
+a.button img {
+  display: block;
+}
+
 ul li {
   position: relative;
 }
@@ -101,7 +105,6 @@ ul li {
 }
 
 #projects-wrap .button.previous img, #projects-wrap .button.next img {
-  display: block;
   margin: 10px;
 }
 
@@ -215,24 +218,8 @@ ul li {
   margin-left: 20px;
 }
 
-a.footer-button {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  
-  display: inline-block;
-  background-color: #20ad83;
-  font-size: 26px;
-  font-weight: 700;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  width: 40px;
-}
-
-a.footer-button:hover {
-  background-color: #14d099;
+#footer-nav .button {
+  padding: 4px;
 }
 
 .fluffy {
