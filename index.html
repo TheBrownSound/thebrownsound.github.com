@@ -52,6 +52,59 @@
     })();
   </script>
   
+  <!-- JS
+  ================================================== -->
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="javascripts/tabs.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      
+      var currentProject = 0;
+      var projectArray = new Array();
+      
+      $("#projects").find(".project").each(function(i) {
+        if (i == 0) {
+          $(this).addClass("current-project");
+        }
+        projectArray.push($(this));
+      });
+      
+      function showCurrentProject() {
+        console.log("showCurrentProject()")
+        for (var project in projectArray) {
+          if (project == currentProject) {
+            $(projectArray[project]).addClass("current-project");
+          } else {
+            $(projectArray[project]).removeClass("current-project");
+          }
+        }
+      }
+      
+      $(".button.previous").click(function() {
+        console.log("Previous Clicked");
+        if (currentProject == 0) {
+          currentProject = projectArray.length-1
+        } else {
+          currentProject = currentProject-1;
+        }
+        showCurrentProject();
+      });
+      
+      $(".button.next").click(function() {
+        console.log("Next Clicked");
+        if (currentProject == projectArray.length-1) {
+          currentProject = 0;
+        } else {
+          currentProject = currentProject+1;
+        }
+        showCurrentProject();
+      });
+      
+    });
+    
+  </script>
+  
 </head>
 <body>
 
@@ -89,59 +142,65 @@
     </div><!-- container -->
     
   </div>
-  <div id="project-wrap">
+  <div id="projects-wrap">
     <h3 class="container">Latest Projects</h3>
+    <a class="button previous"><img src="images/left_arrow.png" /></a>
+    <a class="button next"><img src="images/right_arrow.png" /></a>
     
     <div id="projects" class="container">
       
-      <div class="project one-third column alpha">
-        <a class="image-link" href="/swipebright">
-          <img src="images/project_images/swipebright.png" alt="Swipebright">
-        </a>
-        <h4>SwipeBright</h4>
-        <p>iPhone App</p>
+      <div class="project container">
+        <div class="display ten columns">
+          <img src="images/project_images/swipebright.png" alt="SwipeBright">
+        </div>
+        
+        <div class="description six columns">
+          <h4>SwipeBright</h4>
+          <p>SwipeBright is a really simple iPhone brightness control. I found myself having trouble adjusting the brightness when I was driving, skiing, or doing something else active. It only took two days to write but it has saved me tons of headaches trying to turn up the brightness when I'm on the go.</p>
+          
+          <h5>Collaborators:</h5>
+          <ul class="collaborators">
+            <li><img src="images/collaborators/jarad.png" /><span class="tooltip">Me!</span></li>
+          </ul>
+          <a class="button" href="http://jaradcomingdeer.com/swipebright">Check out SwipeBright</a>
+        </div>
       </div>
       
-      <div class="project one-third column">
-        <a class="image-link" href="http://jaradandjasmine.com">
-          <img src="images/project_images/jaradandjasmine.png" alt="Jarad and Jasmine">
-        </a>
-        <h4>My Wedding</h4>
-        <p>Static Webpage</p>
+      <div class="project container">
+        <div class="display ten columns">
+          <img src="images/project_images/swipebright.png" alt="SwipeBright">
+        </div>
+        
+        <div class="description six columns">
+          <h4>Jarad &amp; Jasmine</h4>
+          <p>Good Ol' Wedding Site</p>
+          
+          <h5>Collaborators:</h5>
+          <ul class="collaborators">
+            <li><img src="images/collaborators/jarad.png" /><span class="tooltip">Me!</span></li>
+          </ul>
+          <a class="button" href="http://jaradandjasmine.com">Check out the Wedding Site</a>
+        </div>
       </div>
       
-      <div class="project one-third column omega">
-        <a class="image-link" href="http://qrawr.com">
-          <img src="images/project_images/qrawr.png" alt="QRawr">
-        </a>
-        <h4>Qrawr</h4>
-        <p>iPhone App / Web Service / Blog</p>
-      </div>
-      
-      <br class="clear" />
-      
-      <div class="project one-third column alpha">
-        <a class="image-link" href="http://buckskatetrucks.com/pages/trucks">
-          <img src="images/project_images/bucktrucks.png" alt="Buck Trucks">
-        </a>
-        <h4>Buck Skate Trucks</h4>
-        <p>Shopify Theme</p>
-      </div>
-      
-      <div class="project one-third column">
-        <a class="image-link" href="http://themancard.heroku.com">
-          <img src="images/project_images/mancard.png" alt="Man Card">
-        </a>
-        <h4>The Man Card</a></h4>
-        <p>Facebook App</p>
-      </div>
-      
-      <div class="project one-third column omega">
-        <a class="image-link" href="http://windigosurfboards.com">
-          <img src="images/project_images/windigo.png" alt="Windigo Surf Boards">
-        </a>
-        <h4>Windigo Surf Boards</h4>
-        <p>Wordpress Theme</p>
+      <div class="project container">
+        <div class="display ten columns">
+          <img src="images/project_images/swipebright.png" alt="SwipeBright">
+        </div>
+        
+        <div class="description six columns">
+          <h4>Qrawr</h4>
+          <p>Qrawr is a QR code based message board. Scan a Qrawr code that you find somewhere in the physical universe and you can leave photos, videos, or some rude comment for the next tech savvy person to find.</p>
+          
+          <h5>Collaborators:</h5>
+          <ul class="collaborators">
+            <li><img src="images/collaborators/jarad.png" /><span class="tooltip">Me!</span></li>
+            <li><img src="images/collaborators/jay.png" /><span class="tooltip">Jay Swain</span></li>
+            <li><img src="images/collaborators/brian.png" /><span class="tooltip">Brian Smith</span></li>
+            <li><img src="images/collaborators/nic.png" /><span class="tooltip">Nic Stauber</span></li>
+          </ul>
+          <a class="button" href="http://jaradcomingdeer.com/swipebright">Check out Qrawr</a>
+        </div>
       </div>
       
     </div><!-- container -->
@@ -162,11 +221,6 @@
       </div>
     </div>
   </div>
-
-  <!-- JS
-  ================================================== -->
-  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-  <script src="javascripts/tabs.js"></script>
 
 <!-- End Document
 ================================================== -->

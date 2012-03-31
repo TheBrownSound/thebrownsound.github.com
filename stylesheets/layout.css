@@ -83,22 +83,29 @@ ul li {
 	margin-right: 10px;
 }
 
-#project-wrap {
+#projects-wrap {
   background-color: #363636;
   background-image: url("../images/project_bg.png");
   background-position: top center;
   background-repeat: repeat;
   color: #e6e6e6;
-  padding: 30px 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   position: relative;
 }
 
-#project-wrap .button.previous, #project-wrap .button.next  {
+#projects-wrap .button.previous, #projects-wrap .button.next  {
   position: absolute;
   top: 50%;
+  margin-bottom: 0px;
 }
 
-#project-wrap .button.previous {
+#projects-wrap .button.previous img, #projects-wrap .button.next img {
+  display: block;
+  margin: 10px;
+}
+
+#projects-wrap .button.previous {
   left: 0px;
   
   -moz-border-radius-topleft: 0px;
@@ -107,7 +114,7 @@ ul li {
   border-radius: 0px 4px 4px 0px;
 }
 
-#project-wrap .button.next {
+#projects-wrap .button.next {
   right: 0px;
   
   -moz-border-radius-topright: 0px;
@@ -116,8 +123,9 @@ ul li {
   border-radius: 4px 0px 0px 4px;
 }
 
-#project-wrap h3 {
-  margin-top: -80px;
+#projects-wrap h3 {
+  margin-top: -100px;
+  margin-bottom: 70px;
 }
 
 #projects {
@@ -128,48 +136,14 @@ ul li {
 	color: #e6e6e6;
 }
 
-#projects .project h4,
-#projects .project p {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 220px;
-}
-
-#projects .project .image-link {
-  background-color: #20ad83;
-/*  border: 1px solid #14d099;*/
-  display: block;
-  padding: 10px;
-  margin: 20px auto 10px auto;
-  
-  max-width: 200px;
-  
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  
-  -webkit-box-shadow: 0px 0px 4px 0px #222222;
-  -moz-box-shadow: 0px 0px 4px 0px #222222;
-  box-shadow: 0px 0px 4px 0px #222222;
-}
-
-#projects .project .image-link img {
-  display: block;
+#projects .project {
+  display: none;
+  position: relative;
   width: 100%;
   
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-}
-
-#projects .project .image-link:hover {
-  background-color: #14d099;
-}
-
-
-
-#projects .project .container{
-  position: relative;
 }
 
 #projects .project .display {
@@ -191,9 +165,12 @@ ul li {
   width: 100%;
 }
 
-
 #projects .project .description ul.collaborators li {
   float: left;
+}
+
+#projects .project .description ul.collaborators li span.tooltip {
+  display: none;
 }
 
 #projects .project .description .button {
@@ -201,7 +178,7 @@ ul li {
   right: 0px;
   bottom: 0px;
   
-  font-size: 16px;
+  font-size: 14px;
   height: 32px;
   line-height: 32px;
   margin-bottom: 0px;
