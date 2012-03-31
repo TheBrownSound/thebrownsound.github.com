@@ -117,6 +117,10 @@ ul li {
   border-radius: 0px 4px 4px 0px;
 }
 
+#projects-wrap .button.previous:hover {
+  padding-left: 10px;
+}
+
 #projects-wrap .button.next {
   right: 0px;
   
@@ -124,6 +128,10 @@ ul li {
   -moz-border-radius-bottomright: 0px;
   -webkit-border-radius: 4px 0px 0px 4px;
   border-radius: 4px 0px 0px 4px;
+}
+
+#projects-wrap .button.next:hover {
+  padding-right: 10px;
 }
 
 #projects-wrap h3 {
