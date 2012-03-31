@@ -55,61 +55,109 @@
 </head>
 <body>
 
-
-
   <!-- Primary Page Layout
   ================================================== -->
-  
-  <div class="container">
-    <div id="header" class="sixteen columns">
-      <img src="images/little_jarad.png" alt="Little Jarad" />
-      <h1>Jarad Comingdeer.</h1>
-      <h2>Illustrator, Designer, Developer.</h2>
-      <p>I am a front-end web developer based in San Diego, California. I love making applications that look great, and work even better.</p>
-    </div>
-    <div class="eight columns">
-      <h3>Priorities</h3>
-      <ul class="square">
-        <li><strong>Usability First</strong>: Web applications are tools first. If you can't use it, no amount of bells and whistles are going to fix it.</li>
-        <li><strong>Flexible Development</strong>: Design changes and code will break. Developing flexible products ensures longevity and painless changes down the road.</li>
-        <li><strong>Give It A Soul</strong>: Style and presentation go a long way. Setting the right tone enhances experiences and can be the difference between good and <em>blow-your-pants-off awesome.</em></li>
-      </ul>
-    </div>
-    <div class="eight columns">
-      <h3>Details</h3>
-      <ul class="square">
-        <li><strong>5+ years</strong> experience developing everything from static webpages to full-fledged mobile and desktop applications.</li>
-        <li><strong>Bachelor of Science</strong> in Interactive Media Design from the Art Institute of California, San Diego. Yes, I went to one of those 'Art' schools.</li>
-        <li><strong>Comprehensive Front-end Developer</strong> focused on iterative development, responsive web design, and drawing fun guys like this. <img class="fluffy" src="images/Fluffy.png" alt="Rawr!"></li>
-      </ul>
-    </div>
-  </div><!-- container -->
+  <div id="info-wrap">
+    
+    <div id="info" class="container">
+      
+      <div id="header" class="sixteen columns">
+        <img src="images/little_jarad.png" alt="Little Jarad" />
+        <h1>Jarad Comingdeer.</h1>
+        <h2>Illustrator, Designer, Developer.</h2>
+        <p>I am a front-end web developer based in San Diego, California. I love making applications that look great, and work even better.</p>
+      </div>
+      
+      <div class="eight columns">
+        <h3>Priorities</h3>
+        <ul class="square">
+          <li><strong>Usability First</strong>: Web applications are tools first. If you can't use it, no amount of bells and whistles are going to fix it.</li>
+          <li><strong>Flexible Development</strong>: Design changes and code will break. Developing flexible products ensures longevity and painless changes down the road.</li>
+          <li><strong>Give It A Soul</strong>: Style and presentation go a long way. Setting the right tone enhances experiences and can be the difference between good and <em>blow-your-pants-off awesome.</em></li>
+        </ul>
+      </div>
+      
+      <div class="eight columns">
+        <h3>Details</h3>
+        <ul class="square">
+          <li><strong>5+ years</strong> experience developing everything from static webpages to full-fledged mobile and desktop applications.</li>
+          <li><strong>Bachelor of Science</strong> in Interactive Media Design from the Art Institute of California, San Diego. Yes, I went to one of those 'Art' schools.</li>
+          <li><strong>Comprehensive Front-end Developer</strong> focused on iterative development, responsive web design, and drawing fun guys like this. <img class="fluffy" src="images/Fluffy.png" alt="Rawr!"></li>
+        </ul>
+      </div>
+      
+    </div><!-- container -->
+    
+  </div>
   <div id="project-wrap">
+    <h3 class="container">Latest Projects</h3>
+    <a class="button previous">&larr;</a>
+    <a class="button next">&rarr;</a>
+    
     <div id="projects" class="container">
-      <h3>Latest Projects</h3>
-      <div class="eight columns alpha">
-        <img class="project_icon" src="images/qrawr_icon.png" alt="Qrawr">
-        <h4><a href="http://qrawr.com">Qrawr</a></h4>
-        <p>Qrawr is a QR code based message board. Scan a Qrawr code that you find somewhere in the physical universe and you can leave photos, videos, or some rude comment for the next tech savvy person to find.</p>
+      
+      <div class="project">
+        <div class="container">
+          <div class="display ten columns">
+            <img src="images/project_images/swipebright.png" alt="SwipeBright">
+          </div>
+          
+          <div class="description six columns">
+            <h4>SwipeBright</h4>
+            <p>SwipeBright is a really simple iPhone brightness control. I found myself having trouble adjusting the brightness when I was driving, skiing, or doing something else active. It only took two days to write but it has saved me tons of headaches trying to turn up the brightness when I'm on the go.</p>
+            
+            <h5>Collaborators</h5>
+            <ul class="collaborators">
+              <li><img="/images/collaborators/jarad_s.png"><span class="tooltip">Me!</span></li>
+            </ul>
+            <a class="button" href="http://jaradcomingdeer.com/swipebright">Check out SwipeBright</a>
+          </div>
+        </div>
       </div>
-      <div class="eight columns omega">
-        <img class="project_icon" src="images/buck_icon.png" alt="Buck Plaque">
-        <h4><a href="http://buckskatetrucks.com">Buck Skate Trucks</a></h4>
-        <p>Shopify based theme for Buck Skate Trucks. Custom theming options and lots of little extras for the guys.</p>
+      
+      <div class="project">
+        <div class="container">
+          <div class="display ten columns">
+            <img src="images/project_images/swipebright.png" alt="SwipeBright">
+          </div>
+          
+          <div class="description six columns">
+            <h4>Qrawr</h4>
+            <p>Qrawr is a QR code based message board. Scan a Qrawr code that you find somewhere in the physical universe and you can leave photos, videos, or some rude comment for the next tech savvy person to find.</p>
+            
+            <h5>Collaborators</h5>
+            <ul class="collaborators">
+              <li><img="/images/collaborators/jarad_s.png"><span class="tooltip">Me!</span></li>
+            </ul>
+            <a class="button" href="http://jaradcomingdeer.com/swipebright">Check out Qrawr</a>
+          </div>
+        </div>
       </div>
-      <br class="clear" />
-      <div class="eight columns alpha">
-        <img class="project_icon" src="images/mancard_icon.png" alt="Man Card">
-        <h4><a href="http://themancard.heroku.com">The Man Card</a></h4>
-        <p>Fun little Facebook app so you can revoke your best bud's Man Card points when he does something un-manly.</p>
-      </div>
-      <div class="eight columns omega">
-        <img class="project_icon" src="images/windigo_icon.png" alt="Windigo Fork">
-        <h4><a href="http://windigosurfboards.com">Windigo Surf Boards</a></h4>
-        <p>Wordpress Theme and matching Big Cartel theme for Windigo Surfboards. Sooner or later I will have to move them over to Shopify, but until then it's not too shabby.</p>
-      </div>
+      
     </div><!-- container -->
   </div>
+  
+  
+  <div class="eight columns omega">
+    <img class="project_icon" src="images/buck_icon.png" alt="Buck Plaque">
+    <h4><a href="http://buckskatetrucks.com">Buck Skate Trucks</a></h4>
+    <p>Shopify based theme for Buck Skate Trucks. Custom theming options and lots of little extras for the guys.</p>
+  </div>
+  
+  <br class="clear" />
+  
+  <div class="eight columns alpha">
+    <img class="project_icon" src="images/mancard_icon.png" alt="Man Card">
+    <h4><a href="http://themancard.heroku.com">The Man Card</a></h4>
+    <p>Fun little Facebook app so you can revoke your best bud's Man Card points when he does something un-manly.</p>
+  </div>
+  
+  <div class="eight columns omega">
+    <img class="project_icon" src="images/windigo_icon.png" alt="Windigo Fork">
+    <h4><a href="http://windigosurfboards.com">Windigo Surf Boards</a></h4>
+    <p>Wordpress Theme and matching Big Cartel theme for Windigo Surfboards. Sooner or later I will have to move them over to Shopify, but until then it's not too shabby.</p>
+  </div>
+  
   <div id="footer-wrap">
     <div id="footer" class="container">
       <div id="footer-nav"class="eight columns">
