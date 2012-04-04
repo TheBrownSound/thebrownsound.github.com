@@ -75,6 +75,7 @@ a:hover {
 }
 
 #info a.button {
+  background-color: #b1d8ff;
   background-image: url("../images/swipebright/app_icon.png");
   background-repeat: no-repeat;
   background-position: 170px 4px;
@@ -89,6 +90,10 @@ a:hover {
   margin-top: 40px;
   padding: 12px 69px 12px 12px;
   width: 150px;
+}
+
+#info a.button:hover {
+  background-color: #FFF;
 }
 
 #info a.button em {
