@@ -60,9 +60,6 @@ ul li {
 ================================================== */
 
 #info-wrap {
-  background-image: url("../images/project_repeat_top.png");
-  background-position: bottom center;
-  background-repeat: repeat-x;
   padding-bottom: 100px;
 }
 
@@ -87,7 +84,14 @@ ul li {
 	margin-right: 10px;
 }
 
-#projects-wrap {
+#projects-title {
+  background-image: url("../images/project_repeat_top.png");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  padding-bottom: 10px;
+}
+
+#projects-window {
   background-color: #363636;
   background-image: url("../images/project_bg.png");
   background-position: top center;
@@ -96,20 +100,24 @@ ul li {
   padding-bottom: 50px;
   padding-top: 50px;
   position: relative;
+  overflow: hidden;
 }
 
-#projects-wrap .button.previous, #projects-wrap .button.next  {
+#projects-window .button.previous, #projects-window .button.next  {
   position: absolute;
   top: 50%;
   margin-bottom: 0px;
+  z-index: 2;
 }
 
-#projects-wrap .button.previous img, #projects-wrap .button.next img {
+#projects-window .button.previous img, #projects-window .button.next img {
   margin: 10px;
 }
 
-#projects-wrap .button.previous {
+#projects-window .button.previous {
   left: 0px;
+  
+  padding-left: 10px;
   
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-bottomleft: 0px;
@@ -117,48 +125,38 @@ ul li {
   border-radius: 0px 4px 4px 0px;
 }
 
-#projects-wrap .button.previous:hover {
-  padding-left: 10px;
+#projects-window .button.previous:hover {
+  padding-left: 14px;
 }
 
-#projects-wrap .button.next {
+#projects-window .button.next {
   right: 0px;
   
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomright: 0px;
   -webkit-border-radius: 4px 0px 0px 4px;
   border-radius: 4px 0px 0px 4px;
-}
-
-#projects-wrap .button.next:hover {
   padding-right: 10px;
 }
 
-#projects-wrap h3 {
-  margin-top: -100px;
-  margin-bottom: 70px;
-}
-
-#projects {
-  margin-top: 50px;
+#projects-window .button.next:hover {
+  padding-right: 14px;
 }
 
 #projects h4, #projects h5 {
 	color: #e6e6e6;
 }
 
-#projects .project {
-  display: none;
-  position: relative;
-  width: 100%;
-  
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
 
 #projects .project .display {
   overflow: hidden;
+}
+
+#projects .project .display img {
+  display: block;
+  margin: 0px auto;
+  max-width: 460px;
+  width: 100%;
   
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -167,13 +165,6 @@ ul li {
   -webkit-box-shadow: 0px 0px 4px 0px #222222;
   -moz-box-shadow: 0px 0px 4px 0px #222222;
   box-shadow: 0px 0px 4px 0px #222222;
-}
-
-#projects .project .display img {
-  display: block;
-  margin: 0px auto;
-  max-width: 580px;
-  width: 100%;
 }
 
 #projects .project .description ul.collaborators li {
