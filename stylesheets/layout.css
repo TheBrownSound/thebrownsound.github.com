@@ -36,14 +36,14 @@ a:hover, a:focus {
   color: #14d099;
 }
 
-a.button {
+a.button, a.pager-link {
   color: #222;
   border: none;
   background-color: #20ad83;
   text-shadow: 0 1px #26e7ad;
 }
 
-a.button:hover, a.button:focus {
+a.button:hover, a.button:focus, a.pager-link:hover {
   background-color: #14d099;
   border: none;
 }
@@ -97,7 +97,6 @@ ul li {
   background-position: top center;
   background-repeat: repeat;
   color: #e6e6e6;
-  padding-bottom: 50px;
   padding-top: 50px;
   position: relative;
   overflow: hidden;
@@ -143,13 +142,17 @@ ul li {
   padding-right: 14px;
 }
 
+#projects h4 {
+  font-size: 26px;
+}
+
 #projects h4, #projects h5 {
 	color: #e6e6e6;
 }
 
 
 #projects .project .display {
-  overflow: hidden;
+  
 }
 
 #projects .project .display img {
@@ -162,12 +165,13 @@ ul li {
   -moz-border-radius: 10px;
   border-radius: 10px;
   
-  -webkit-box-shadow: 0px 0px 4px 0px #222222;
-  -moz-box-shadow: 0px 0px 4px 0px #222222;
-  box-shadow: 0px 0px 4px 0px #222222;
+  -webkit-box-shadow: 0px 0px 6px 0px #222222;
+  -moz-box-shadow: 0px 0px 6px 0px #222222;
+  box-shadow: 0px 0px 6px 0px #222222;
 }
 
 #projects .project .description ul.collaborators li {
+  margin-right: 4px;
   float: left;
 }
 
@@ -175,14 +179,17 @@ ul li {
   display: none;
 }
 
-#projects .project .description .button {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  
+#projects .project .links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#projects .project .links .button {
   font-size: 14px;
   height: 32px;
   line-height: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 0px;
 }
 
@@ -226,6 +233,14 @@ ul li {
   bottom: -64px;
   right: 0px;
   z-index: -1;
+}
+
+/* #bxSlider
+================================================== */
+.bx-pager {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 /* #Media Queries
