@@ -64,7 +64,11 @@ ul li {
 ================================================== */
 
 #info-wrap {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
+}
+
+#info-wrap .columns {
+  padding-bottom: 30px;
 }
 
 #header {
