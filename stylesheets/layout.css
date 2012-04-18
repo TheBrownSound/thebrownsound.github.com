@@ -151,8 +151,14 @@ ul li {
 }
 
 
-#projects .project .display {
+#projects .project .display img, #projects .project .display iframe{
+  -webkit-box-shadow: 0px 0px 6px 0px #222222;
+  -moz-box-shadow: 0px 0px 6px 0px #222222;
+  box-shadow: 0px 0px 6px 0px #222222;
   
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 #projects .project .display img {
@@ -160,14 +166,11 @@ ul li {
   margin: 0px auto;
   max-width: 460px;
   width: 100%;
-  
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  
-  -webkit-box-shadow: 0px 0px 6px 0px #222222;
-  -moz-box-shadow: 0px 0px 6px 0px #222222;
-  box-shadow: 0px 0px 6px 0px #222222;
+}
+
+#projects .project .display iframe {
+  width: 460px;
+  height: 286px;
 }
 
 #projects .project .description ul.collaborators li {
