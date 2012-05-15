@@ -64,8 +64,8 @@
   </script>
   
   <script type="text/javascript">
-  var greeting;
   var slider;
+  var greeting;
     $(document).ready(function() {
       slider = $('#projects').bxSlider({
         controls: false,
@@ -94,16 +94,16 @@
           $("#greeting").html(greeting);
         }
       }
-      
-      function loadLinkedInData() {
-        IN.API.Profile("me")
-          .fields(["id", "firstName"])
-          .result(function(result) {
-            profile = result.values[0];
-            setGreeting(profile.firstName)
-          });
-      }
     });
+    
+    function loadLinkedInData() {
+      IN.API.Profile("me")
+        .fields(["id", "firstName"])
+        .result(function(result) {
+          profile = result.values[0];
+          setGreeting(profile.firstName)
+        });
+    }
   </script>
   
 </head>
