@@ -65,7 +65,6 @@
   
   <script type="text/javascript">
   var slider;
-  var greeting;
     $(document).ready(function() {
       slider = $('#projects').bxSlider({
         controls: false,
@@ -90,10 +89,8 @@
     });
     
     function setGreeting(name) {
-      if (!greeting) {
-        greeting = "<p> Hey there " + name + "!</p";
-        $("#greeting").html(greeting);
-      }
+      greeting = "<p> Hey there " + name + "!</p";
+      $("#greeting").html(greeting);
     }
     
     function loadLinkedInData() {
@@ -125,7 +122,9 @@
          if (response.status === 'connected') {
           FB.api('/me', function(response) {
             console.log('Good to see you, ' + response.name + '.');
-            setGreeting(response.name);
+            if (response.name) {
+              setGreeting(response.name);
+            }
           });
          } else if (response.status === 'not_authorized') {
            // the user is logged in to Facebook, 
@@ -133,17 +132,6 @@
          } else {
            // the user isn't logged in to Facebook.
          }
-        });
-
-       FB.login(function(response) {
-          if (response.authResponse) {
-            console.log('Welcome!  Fetching your information.... ');
-            FB.api('/me', function(response) {
-              setGreeting(response.name);
-            });
-          } else {
-            console.log('User cancelled login or did not fully authorize.');
-          }
         });
     };
 
@@ -163,13 +151,14 @@
     
     
     <div id="info" class="container">
-      <div id="bubble">
+      <div id="logins">
+        <!-- LinkedIn Login Button -->
+        <script type="IN/Login" data-onAuth="loadLinkedInData"></script>
+        <!-- Facebook Login button -->
+        <div class="fb-login-button"></div>
+      </div>
+      <div id="bubble" style="display:none">
         <div id="greeting">
-          <!-- LinkedIn Login Button -->
-          <script type="IN/Login" data-onAuth="loadLinkedInData"></script>
-          <span>or</span>
-          <!-- Facebook Login button -->
-          <div class="fb-login-button"></div>
         </div>
       </div>
       
