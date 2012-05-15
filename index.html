@@ -89,7 +89,8 @@
     });
     
     function setGreeting(name) {
-      greeting = "<p> Hey there " + name + "!</p";
+      console.log("setGreeting: " + name );
+      var greeting = "<p> Hey there " + name + "!</p";
       $("#greeting").html(greeting);
     }
     
@@ -154,7 +155,6 @@
   ================================================== -->
   <div id="info-wrap">
     
-    
     <div id="info" class="container">
       <div id="logins" class="sixteen columns">
         <!-- LinkedIn Login Button -->
@@ -162,9 +162,8 @@
         <!-- Facebook Login button -->
         <div class="fb-login-button"></div>
       </div>
-      <div id="bubble" style="display:none">
-        <div id="greeting">
-        </div>
+      <div id="bubble">
+        <div id="greeting"></div>
       </div>
       
       <div id="header" class="sixteen columns">
