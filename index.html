@@ -87,14 +87,14 @@
          // Handle your resize only once total, after a one second calm.
          slider.reloadShow();
       }));
-      
-      function setGreeting(name) {
-        if (!greeting) {
-          greeting = "<p> Hey there " + name + "!</p";
-          $("#greeting").html(greeting);
-        }
-      }
     });
+    
+    function setGreeting(name) {
+      if (!greeting) {
+        greeting = "<p> Hey there " + name + "!</p";
+        $("#greeting").html(greeting);
+      }
+    }
     
     function loadLinkedInData() {
       IN.API.Profile("me")
