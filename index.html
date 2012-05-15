@@ -118,9 +118,26 @@
         xfbml      : true  // parse XFBML
       });
       
+      function handleFacebookStatus(status) {
+        if (status === 'connected') {
+          FB.api('/me', function(response) {
+            setGreeting(response.name);
+          });
+        } else if (status === 'not_authorized') {
+          // the user is logged in to Facebook, 
+          // but has not authenticated your app
+        } else {
+          // the user isn't logged in to Facebook.
+        }
+      }
+      
       FB.Event.subscribe('auth.authResponseChange', function(response) {
-        alert('The status of the session is: ' + response.status);
+        handleFacebookStatus(response.status);
       });
+      
+      FB.getLoginStatus(function(response) {
+        handleFacebookStatus(response.status);
+       });
     };
 
     // Load the SDK Asynchronously
