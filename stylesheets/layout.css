@@ -63,6 +63,17 @@ ul li {
   padding-bottom: 100px;
 }
 
+#info {
+  position: relative;
+}
+
+#bubble {
+  background-color: #FFF;
+  position: absolute;
+  left: 60%;
+  top: 40px;
+}
+
 #header {
 	text-align: center;
 	padding-bottom: 30px;
