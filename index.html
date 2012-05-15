@@ -93,8 +93,8 @@
         .fields(["id", "firstName"])
         .result(function(result) {
           profile = result.values[0];
-          profHTML = "<p> Hello <a href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += "<span class=myname>" + profile.firstName + "</a> </span> </p";
+          profHTML = "<p> Hey there <a class=myname href=\"" + profile.publicProfileUrl + "\">";
+          profHTML += profile.firstName + "</a>!</p";
           $("#greeting").html(profHTML);
         });
     }
