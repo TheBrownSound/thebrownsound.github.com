@@ -67,6 +67,10 @@ ul li {
   position: relative;
 }
 
+#logins {
+  text-align: right;
+}
+
 #bubble {
   background-image: url('../images/chatnipple.png');
   background-repeat: no-repeat;
@@ -290,6 +294,10 @@ ul li {
   z-index: -1;
 }
 
+.fb-login-button {
+  display: inline-block;
+}
+
 /* #bxSlider
 ================================================== */
 .bx-pager {
@@ -333,22 +341,3 @@ ul li {
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
-
-
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
