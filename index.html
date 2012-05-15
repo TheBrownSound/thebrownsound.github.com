@@ -64,6 +64,7 @@
   </script>
   
   <script type="text/javascript">
+  var greeting;
   var slider;
     $(document).ready(function() {
       slider = $('#projects').bxSlider({
@@ -86,18 +87,23 @@
          // Handle your resize only once total, after a one second calm.
          slider.reloadShow();
       }));
+      
+      function setGreeting(name) {
+        if (!greeting) {
+          greeting = "<p> Hey there " + name + "!</p";
+          $("#greeting").html(greeting);
+        }
+      }
+      
+      function loadLinkedInData() {
+        IN.API.Profile("me")
+          .fields(["id", "firstName"])
+          .result(function(result) {
+            profile = result.values[0];
+            setGreeting(profile.firstName)
+          });
+      }
     });
-    
-    function loadLinkedInData() {
-      IN.API.Profile("me")
-        .fields(["id", "firstName"])
-        .result(function(result) {
-          profile = result.values[0];
-          profHTML = "<p> Hey there <a class=myname href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += profile.firstName + "</a>!</p";
-          $("#greeting").html(profHTML);
-        });
-    }
   </script>
   
 </head>
