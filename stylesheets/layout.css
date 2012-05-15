@@ -70,17 +70,19 @@ ul li {
 #bubble {
   background-image: url('../images/chatnipple.png');
   background-repeat: no-repeat;
-  background-position: 0px 50%;
-  margin-left: 50px;
-  padding-left: 26px;
-  left: 50%;
-  top: 40px;
+  background-position-x: right;
+  background-position-y: 50%;
+  margin-right: 64px;
+  padding-right: 26px;
+  position: absolute;
+  right: 50%;
+  top: 60px;
 }
 
 #greeting {
   background-color: #FFF;
   text-align: center;
-  position: absolute;
+  
   padding: 20px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
