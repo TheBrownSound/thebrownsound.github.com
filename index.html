@@ -105,17 +105,42 @@
   
 </head>
 <body>
+  <!-- Facebook JS SDK
+  ================================================== -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '304608136287619', // App ID
+        channelUrl : '//jaradcomingdeer.com/channel.html', // Channel File
+        status     : true, // check login status
+        cookie     : true, // enable cookies to allow the server to access the session
+        xfbml      : true  // parse XFBML
+      });
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+       var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       ref.parentNode.insertBefore(js, ref);
+     }(document));
+  </script>
 
   <!-- Primary Page Layout
   ================================================== -->
   <div id="info-wrap">
-    <div id="profile"></div>
-    <script type="IN/Login" data-onAuth="loadData">
-      Hello, <?js= firstName ?> <?js= lastName ?>.
-    </script>
+    
     
     <div id="info" class="container">
-      
+      <div id="logins" class="sixteen columns">
+        <script type="IN/Login" data-onAuth="loadData">
+          Hello, <?js= firstName ?> <?js= lastName ?>.
+        </script>
+      </div>
+      <div id="profile"></div>
       <div id="header" class="sixteen columns">
         <img src="images/little_jarad.png" alt="Little Jarad" />
         <h1>Jarad Comingdeer.</h1>
