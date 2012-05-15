@@ -117,6 +117,10 @@
         cookie     : true, // enable cookies to allow the server to access the session
         xfbml      : true  // parse XFBML
       });
+      
+      FB.Event.subscribe('auth.authResponseChange', function(response) {
+        alert('The status of the session is: ' + response.status);
+      });
     };
 
     // Load the SDK Asynchronously
