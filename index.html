@@ -120,6 +120,28 @@
         cookie     : true, // enable cookies to allow the server to access the session
         xfbml      : true  // parse XFBML
       });
+      
+      FB.getLoginStatus(function(response) {
+         if (response.status === 'connected') {
+           setGreeting(response.name);
+         } else if (response.status === 'not_authorized') {
+           // the user is logged in to Facebook, 
+           // but has not authenticated your app
+         } else {
+           // the user isn't logged in to Facebook.
+         }
+        });
+
+       FB.login(function(response) {
+          if (response.authResponse) {
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function(response) {
+              setGreeting(response.name);
+            });
+          } else {
+            console.log('User cancelled login or did not fully authorize.');
+          }
+        });
     };
 
     // Load the SDK Asynchronously
