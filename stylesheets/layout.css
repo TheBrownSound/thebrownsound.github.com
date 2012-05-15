@@ -70,8 +70,15 @@ ul li {
 #bubble {
   background-color: #FFF;
   position: absolute;
+  padding: 20px;
   left: 60%;
   top: 40px;
+  
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  
+  -webkit-box-shadow: inset 0px 0px 40px 0px CCC;
+  box-shadow: inset 0px 0px 40px 0px CCC;
 }
 
 #header {

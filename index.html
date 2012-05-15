@@ -88,14 +88,14 @@
       }));
     });
     
-    function loadData() {
+    function loadLinkedInData() {
       IN.API.Profile("me")
         .fields(["id", "firstName"])
         .result(function(result) {
           profile = result.values[0];
           profHTML = "<p> Hello <a href=\"" + profile.publicProfileUrl + "\">";
           profHTML += "<span class=myname>" + profile.firstName + "</a> </span> </p";
-          $("#profile").html(profHTML);
+          $("#greeting").html(profHTML);
         });
     }
   </script>
@@ -133,11 +133,11 @@
     
     <div id="info" class="container">
       <div id="bubble">
-        <script type="IN/Login" data-onAuth="loadData">
-          Hello, <?js= firstName ?> <?js= lastName ?>.
-        </script>
+        <!-- LinkedIn Login Button -->
+        <script type="IN/Login" data-onAuth="loadLinkedInData"></script>
+        <!-- Facebook Login button -->
         <div class="fb-login-button"></div>
-        <div id="profile"></div>
+        <div id="greeting"></div>
       </div>
       
       <div id="header" class="sixteen columns">
