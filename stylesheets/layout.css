@@ -72,11 +72,11 @@ ul li {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 50%;
-  margin-right: 64px;
+  margin-right: 74px;
   padding-right: 26px;
   position: absolute;
   right: 50%;
-  top: 60px;
+  top: 136px;
 }
 
 #greeting {
