@@ -90,14 +90,11 @@
     
     function loadData() {
       IN.API.Profile("me")
-        .fields(["id", "firstName", "lastName", "pictureUrl","headline"])
+        .fields(["id", "firstName"])
         .result(function(result) {
           profile = result.values[0];
-          profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";      
-          profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
-          profHTML += "<span class=myheadline>" + profile.headline + "</span>";
+          profHTML = "<p> Hello <a href=\"" + profile.publicProfileUrl + "\">";
+          profHTML += "<span class=myname>" + profile.firstName + "</a> </span> </p";
           $("#profile").html(profHTML);
         });
     }
