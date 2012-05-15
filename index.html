@@ -117,22 +117,6 @@
         cookie     : true, // enable cookies to allow the server to access the session
         xfbml      : true  // parse XFBML
       });
-      
-      FB.getLoginStatus(function(response) {
-         if (response.status === 'connected') {
-          FB.api('/me', function(response) {
-            console.log('Good to see you, ' + response.name + '.');
-            if (response.name) {
-              setGreeting(response.name);
-            }
-          });
-         } else if (response.status === 'not_authorized') {
-           // the user is logged in to Facebook, 
-           // but has not authenticated your app
-         } else {
-           // the user isn't logged in to Facebook.
-         }
-        });
     };
 
     // Load the SDK Asynchronously
