@@ -52,40 +52,8 @@
     })();
   </script>
   
-  <!-- JS
-  ================================================== -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="js/lib/jquery.bxSlider.min.js"></script>
-  <script type="text/javascript" src="js/lib/debounce.js"></script>
-  
-  <script type="text/javascript">
-  var slider;
-    $(document).ready(function() {
-      slider = $('#projects').bxSlider({
-        controls: false,
-        pager: true,
-        pagerType: "short"
-      });
-      
-      $('#projects-window a.button.previous').click(function(){
-        slider.goToPreviousSlide();
-        return false;
-      });
-      
-      $('#projects-window a.button.next').click(function(){
-        slider.goToNextSlide();
-        return false;
-      });
-      
-      $(window).resize($.debounce(500, function() {
-         // Handle your resize only once total, after a one second calm.
-         slider.reloadShow();
-      }));
-    });
-  </script>
-  
 </head>
-<body>
+<body onload="JaradApp.init()">
 
   <!-- Primary Page Layout
   ================================================== -->
@@ -264,7 +232,12 @@
     </div>
   </div>
 
-<!-- End Document
-================================================== -->
+  <!-- JS
+  ================================================== -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.bxSlider.min.js"></script>
+  <script type="text/javascript" src="js/lib/debounce.js"></script>
+  <script type="text/javascript" src="js/jaradcomingdeer.js"></script>
+
 </body>
 </html>
