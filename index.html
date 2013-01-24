@@ -58,11 +58,6 @@
   <script type="text/javascript" src="js/lib/jquery.bxSlider.min.js"></script>
   <script type="text/javascript" src="js/lib/debounce.js"></script>
   
-  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
-    api_key: oqze524yj823
-    authorize: true
-  </script>
-  
   <script type="text/javascript">
   var slider;
     $(document).ready(function() {
@@ -87,20 +82,6 @@
          slider.reloadShow();
       }));
     });
-    
-    function loadData() {
-      IN.API.Profile("me")
-        .fields(["id", "firstName", "lastName", "pictureUrl","headline"])
-        .result(function(result) {
-          profile = result.values[0];
-          profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";      
-          profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
-          profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
-          profHTML += "<span class=myheadline>" + profile.headline + "</span>";
-          $("#profile").html(profHTML);
-        });
-    }
   </script>
   
 </head>
@@ -109,10 +90,6 @@
   <!-- Primary Page Layout
   ================================================== -->
   <div id="info-wrap">
-    <div id="profile"></div>
-    <script type="IN/Login" data-onAuth="loadData">
-      Hello, <?js= firstName ?> <?js= lastName ?>.
-    </script>
     
     <div id="info" class="container">
       
