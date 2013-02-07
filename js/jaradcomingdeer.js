@@ -3,7 +3,7 @@ var JaradApp = function(){
 
 	function resizeSlider() {
 		var slide = slider.getCurrentSlide();
-		slider.reloadShow();
+		//slider.reloadShow();
 		slider.goToSlide(slide);
 	};
 	
@@ -11,17 +11,17 @@ var JaradApp = function(){
 	return {
 		init: function() {
 			slider = $('#projects').bxSlider({
-				controls: false,
-			  	pager: true,
-			  	pagerType: "short"
+				//controls: false,
+				infiniteLoop: true
+			  	//pagerType: "short"
 			});
 			
-			$('#projects-window a.button.previous').click(function(){
+			$('#projects-wrap a.button.previous').click(function(){
 			  	slider.goToPreviousSlide();
 			  	return false;
 			});
 			
-			$('#projects-window a.button.next').click(function(){
+			$('#projects-wrap a.button.next').click(function(){
 			  	slider.goToNextSlide();
 			  	return false;
 			});
