@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ship Game</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/easeljs-0.6.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/tweenjs-0.4.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/preloadjs-0.3.1.min.js"></script>
+
+	<!-- Game Script -->
+	<script type="text/javascript" src="js/ShipCaptainGame.js"></script>
+
+</head>
+<body onload='Game.init("world");'>
+	<div id='debug'>
+		<div id="coords">Map Coords</div>
+		<div id="heading"></div>
+		<div id="knots"></div>
+		<div id="fps"></div>
+	</div>
+	<div class="canvasHolder">
+		<canvas id="world" width="960" height="400" style="background-color:#1e4969;"></canvas>
+	</div>
+</body>
+</html>
