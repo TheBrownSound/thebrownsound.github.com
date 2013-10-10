@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/lib/preloadjs-0.3.1.min.js"></script>
 
 	<!-- Game Script -->
-	<script type="text/javascript" src="js/ShipCaptainGame.min.js"></script>
+	<script type="text/javascript" src="js/ShipCaptainGame.js"></script>
 
 </head>
 <body onload='Game.init("world");'>
@@ -22,8 +22,8 @@
 		<div id="fps"></div>
 	</div>
 	<ul id='controls'>
-		<li><a class="button" onclick="Game.world.playerBoat.toggleSails()">Toggle Sails</a></li>
-		<li><a class="button" onclick="">Fire at will</a></li>
+		<li><a id="sailMode" class="button" onclick="Game.world.playerBoat.toggleSails()">Toggle Sails</a></li>
+		<li><a id="fireMode" class="button" onclick="Game.world.playerBoat.toggleFireMode()">Fire At Will</a></li>
 	</ul>
 	<div class="canvasHolder">
 		<canvas id="world" width="960" height="400" style="background-color:#1e4969;"></canvas>
