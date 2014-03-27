@@ -318,6 +318,28 @@ ul li {
   text-align: center;
 }
 
+a.pager-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.pager-link:hover {
+
+}
+
+a.pager-active, a.pager-active:hover {
+  background: #FFF;
+  text-shadow: none;
+}
+
 /* #Media Queries
 ================================================== */
 
