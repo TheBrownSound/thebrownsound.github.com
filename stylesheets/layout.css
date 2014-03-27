@@ -56,6 +56,10 @@ ul li {
   position: relative;
 }
 
+.center {
+  text-align: center;
+}
+
 .column, .columns {
   margin-bottom: 10px;
 }
