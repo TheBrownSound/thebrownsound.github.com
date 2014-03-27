@@ -270,9 +270,16 @@ ul li {
 }
 
 #skill-list {
-  border-left: 4px solid;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-bottom: 1px solid #a2a2a2;
+  border-top: 1px solid #a2a2a2;
+  background: url('../images/columns.png') top left repeat;
   padding-top: 20px;
   padding-bottom: 10px;
+  -moz-background-size: 100%; 
+  -webkit-background-size: 100%; 
+  background-size: 100%;
 }
 
 #skill-list li {
