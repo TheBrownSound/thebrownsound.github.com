@@ -262,11 +262,15 @@ ul li {
   padding: 4px;
 }
 
+.drawing {
+  position: relative;
+  font-weight: bold;
+}
+
 .fluffy {
   position: absolute;
-  bottom: -64px;
-  right: 0px;
-  z-index: -1;
+  top: 6px;
+  left: 10px;
 }
 
 #skill-list {
