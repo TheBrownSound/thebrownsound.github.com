@@ -80,9 +80,26 @@ ul li {
 	padding-bottom: 30px;
 }
 
-#header img {
-	display: block;
-	margin: 10px auto;
+#little-jarads {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  width: 218px;
+  height: 375px;
+  overflow: hidden
+}
+
+#little-jarads img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#little-jarads img.active {
+  opacity: 1;
 }
 
 #header h1, #header h2 {
