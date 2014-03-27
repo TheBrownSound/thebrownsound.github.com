@@ -304,7 +304,7 @@ ul li {
 }
 
 #skill-list li {
-  background-color: #789b8f;
+  background-color: #B74242;
   color: #FFF;
   line-height: 18px;
   padding: 6px 6px 6px 12px;
@@ -319,13 +319,12 @@ ul li {
 
 #skill-list li .rating {
   background: #FFF;
-  color: #789b8f;
+  color: #444;
   float: right;
   font-weight: bold;
   width: 18px;
   height: 18px;
   text-align: center;
-  
   -webkit-border-radius: 11px;
   -moz-border-radius: 11px;
   border-radius: 11px;
