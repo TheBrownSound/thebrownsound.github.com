@@ -37,12 +37,19 @@ var JaradApp = function(){
 		});
 
 		var characterWrapper = $('#little-jarads');
-		characterWrapper.children('img').each(function () {
+		characterWrapper.children('img').each(function(){
 			characters.push(this);
 		});
 
 		characterWrapper.click(characterClicked);
 		startCharacterRotation();
+
+		var skillGraph = $('#skill-list');
+		skillGraph.children('li').each(function(){
+			var rating = $(this).find('.rating').text();
+			console.log(rating);
+			this.style.width = rating + "0%";
+		});
 
 		// debounce resizing listener for performance
 		$(window).resize($.debounce(500, resizeSlider));
