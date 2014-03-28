@@ -47,7 +47,6 @@ var JaradApp = function(){
 		var skillGraph = $('#skill-list');
 		skillGraph.children('li').each(function(){
 			var rating = $(this).find('.rating').text();
-			console.log(rating);
 			this.style.width = rating + "0%";
 		});
 
