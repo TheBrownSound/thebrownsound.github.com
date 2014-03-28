@@ -86,7 +86,9 @@ ul li {
   margin: 10px auto;
   width: 218px;
   height: 375px;
-  overflow: hidden
+  overflow: hidden;
+  cursor: pointer; 
+  cursor: hand;
 }
 
 #little-jarads img {

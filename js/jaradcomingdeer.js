@@ -1,7 +1,9 @@
 var JaradApp = function(){
+	var ROTATE_INTERVAL = 6000;
 	var slider;
-	var currentJarad = 0;
-	var jarads = [];
+	var rotateTimer;
+	var currentCharacter = 0;
+	var characters = [];
 
 	function resizeSlider() {
 		var slide = slider.getCurrentSlide();
@@ -9,10 +11,22 @@ var JaradApp = function(){
 		slider.goToSlide(slide);
 	}
 
-	function swapJarads() {
-		$(jarads[currentJarad]).toggleClass('active');
-		currentJarad = (currentJarad+1)%jarads.length;
-		$(jarads[currentJarad]).toggleClass('active');
+	function characterClicked() {
+		swapCharacters();
+		if (rotateTimer) {
+			clearInterval(rotateTimer);
+			startCharacterRotation();
+		}
+	}
+
+	function startCharacterRotation() {
+		rotateTimer = setInterval(swapCharacters, ROTATE_INTERVAL);
+	}
+
+	function swapCharacters() {
+		$(characters[currentCharacter]).toggleClass('active');
+		currentCharacter = (currentCharacter+1)%characters.length;
+		$(characters[currentCharacter]).toggleClass('active');
 	}
 
 	function init() {
@@ -22,11 +36,13 @@ var JaradApp = function(){
 			pagerType: "full"
 		});
 
-		$('#little-jarads').children('img').each(function () {
-			jarads.push(this);
+		var characterWrapper = $('#little-jarads');
+		characterWrapper.children('img').each(function () {
+			characters.push(this);
 		});
 
-		setInterval(swapJarads, 6000);
+		characterWrapper.click(characterClicked);
+		startCharacterRotation();
 
 		// debounce resizing listener for performance
 		$(window).resize($.debounce(500, resizeSlider));
