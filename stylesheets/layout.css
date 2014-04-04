@@ -23,28 +23,30 @@ body {
   background-repeat: repeat;
 }
 
-
 h3 {
 	border-bottom: 2px dotted #777;
 }
 
-a {
-  color: #20ad83;
+a, a:visited {
+  color: #B74242;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #14d099;
+  color: #de4f4f;
 }
 
 a.button, a.pager-link {
-  color: #222;
+  color: #FFF;
   border: none;
-  background-color: #20ad83;
-  text-shadow: 0 1px #26e7ad;
+  background: #B74242;
+  text-shadow: none;
+  transition: background 200ms ease-out;
 }
 
 a.button:hover, a.button:focus, a.pager-link:hover {
-  background-color: #14d099;
+  background: #de4f4f;
+  color: #FFF;
   border: none;
 }
 
@@ -52,7 +54,12 @@ a.button img {
   display: block;
 }
 
-ul li {
+#info ul {
+  list-style: circle outside;
+  margin-left: 24px;
+}
+
+#info ul li {
   position: relative;
 }
 
@@ -68,10 +75,6 @@ ul li {
 ================================================== */
 
 #info-wrap {
-  padding-bottom: 30px;
-}
-
-#info-wrap .columns {
   padding-bottom: 30px;
 }
 
@@ -113,6 +116,43 @@ ul li {
 #header h1 {
 	font-weight: bold;
 	margin-right: 10px;
+}
+
+#skills {
+  padding-top: 30px;
+}
+
+#skills h3 {
+  margin: 30px 10px 8px;
+}
+
+#skills .skill:nth-child(4n+1) {
+  clear: both;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill img {
+  background-color: #444;
+  border-radius: 20px;
+  display: inline-block;
+  float: left;
+  padding: 4px;
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.skill h4 {
+  display: inline-block;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#info .skill ul {
+  margin-left: 33px;
 }
 
 #projects-title {
@@ -267,7 +307,8 @@ ul li {
 }
 
 #footer-nav ul {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 #footer-nav ul li {
@@ -359,6 +400,7 @@ a.pager-link:hover {
 
 a.pager-active, a.pager-active:hover {
   background: #FFF;
+  color: #222;
   text-shadow: none;
 }
 
