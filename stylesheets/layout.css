@@ -333,46 +333,6 @@ a.button img {
   left: 10px;
 }
 
-#skill-list {
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-bottom: 1px solid #a2a2a2;
-  border-top: 1px solid #a2a2a2;
-  background: url('../images/columns.png') top left repeat;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  -moz-background-size: 100%; 
-  -webkit-background-size: 100%; 
-  background-size: 100%;
-}
-
-#skill-list li {
-  background-color: #B74242;
-  color: #FFF;
-  line-height: 18px;
-  padding: 6px 6px 6px 12px;
-  
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  border-radius: 0px 15px 15px 0px;
-}
-
-#skill-list li .rating {
-  background: #FFF;
-  color: #444;
-  float: right;
-  font-weight: bold;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  border-radius: 11px;
-}
-
 /* #bxSlider
 ================================================== */
 .bx-pager {
