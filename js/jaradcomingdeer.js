@@ -5,12 +5,6 @@ var JaradApp = function(){
 	var currentCharacter = 0;
 	var characters = [];
 
-	function resizeSlider() {
-		var slide = slider.getCurrentSlide();
-		slider.reloadShow();
-		slider.goToSlide(slide);
-	}
-
 	function characterClicked() {
 		swapCharacters();
 		if (rotateTimer) {
@@ -30,10 +24,10 @@ var JaradApp = function(){
 	}
 
 	function init() {
-		slider = $('#projects').bxSlider({
-			controls: false,
-			pager: true,
-			pagerType: 'full'
+		$('#projects').slick({
+			dots: true,
+			draggable: false,
+			slidesToShow: 2
 		});
 
 		var characterWrapper = $('#little-jarads');
