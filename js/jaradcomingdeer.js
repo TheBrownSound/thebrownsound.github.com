@@ -43,9 +43,6 @@ var JaradApp = function(){
 
 		characterWrapper.click(characterClicked);
 		startCharacterRotation();
-
-		// debounce resizing listener for performance
-		$(window).resize($.debounce(500, resizeSlider));
 	}
 
 	// Probably didn't need to module this but wth, why not.
