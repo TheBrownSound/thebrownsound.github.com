@@ -33,7 +33,7 @@ var JaradApp = function(){
 		slider = $('#projects').bxSlider({
 			controls: false,
 			pager: true,
-			pagerType: "full"
+			pagerType: 'full'
 		});
 
 		var characterWrapper = $('#little-jarads');

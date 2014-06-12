@@ -36,7 +36,7 @@ a:hover, a:focus {
   color: #de4f4f;
 }
 
-a.button, a.pager-link {
+a.button, a.bx-pager-link {
   color: #FFF;
   border: none;
   background: #B74242;
@@ -44,7 +44,7 @@ a.button, a.pager-link {
   transition: background 200ms ease-out;
 }
 
-a.button:hover, a.button:focus, a.pager-link:hover {
+a.button:hover, a.button:focus, a.bx-pager-link:hover {
   background: #de4f4f;
   color: #FFF;
   border: none;
@@ -381,11 +381,18 @@ a.button img {
   text-align: center;
 }
 
-a.pager-link {
+.bx-pager-item {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+a.bx-pager-link {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 0px 10px;
+  margin: 0;
   font-size: 18px;
   border-radius: 15px;
   line-height: 30px;
@@ -394,11 +401,11 @@ a.pager-link {
   text-decoration: none;
 }
 
-a.pager-link:hover {
+a.bx-pager-link:hover {
 
 }
 
-a.pager-active, a.pager-active:hover {
+a.bx-pager-link.active, a.bx-pager-link.active:hover {
   background: #FFF;
   color: #222;
   text-shadow: none;
