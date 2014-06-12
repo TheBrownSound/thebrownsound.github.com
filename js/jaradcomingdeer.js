@@ -44,12 +44,6 @@ var JaradApp = function(){
 		characterWrapper.click(characterClicked);
 		startCharacterRotation();
 
-		var skillGraph = $('#skill-list');
-		skillGraph.children('li').each(function(){
-			var rating = $(this).find('.rating').text();
-			this.style.width = rating + "0%";
-		});
-
 		// debounce resizing listener for performance
 		$(window).resize($.debounce(500, resizeSlider));
 	}
