@@ -24,12 +24,6 @@ var JaradApp = function(){
 	}
 
 	function init() {
-		$('#projects').slick({
-			dots: true,
-			draggable: false,
-			slidesToShow: 2
-		});
-
 		var characterWrapper = $('#little-jarads');
 		characterWrapper.children('img').each(function(){
 			characters.push(this);
