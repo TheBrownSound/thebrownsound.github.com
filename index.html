@@ -12,7 +12,7 @@
   <meta name="author" content="Jarad Comingdeer">
   <meta name="description" content="I am a front-end web developer based in San Diego, California. I love making applications that look great, and work even better.">
   <meta name="keywords" lang="en-us" content="Web Developer, Front end developer, San Diego">
-  
+
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -20,16 +20,17 @@
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- Google Web Font
   ================================================== -->
   <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
-  
+
   <!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="stylesheets/base.css">
-  <link rel="stylesheet" href="stylesheets/skeleton.css">
-  <link rel="stylesheet" href="stylesheets/layout.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/slick.css"/>
 
   <!-- Favicons
   ================================================== -->
@@ -37,16 +38,30 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  
+
+  <!-- Google Analytics
+  ================================================== -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30391259-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 </head>
 <body onload="JaradApp.init()">
 
   <!-- Primary Page Layout
   ================================================== -->
   <div id="info-wrap">
-    
+
     <div id="info" class="container">
-      
+
       <div id="header" class="sixteen columns">
         <div id="little-jarads">
           <img class="active" src="images/jarad_work.png" alt="Work Jarad" />
@@ -57,7 +72,7 @@
         <h2>Developer, Designer, Illustrator.</h2>
         <p>I am a front-end web developer based in San Diego, California. I love building web applications.</p>
       </div>
-      
+
       <div class="eight columns">
         <h3>Priorities</h3>
         <ul>
@@ -66,16 +81,16 @@
           <li><strong>Give It A Soul</strong>: Style and presentation go a long way. Setting the right tone enhances experiences and can be the difference between a good experience or a impactful one.</li>
         </ul>
       </div>
-      
+
       <div class="eight columns">
         <h3>Details</h3>
         <ul>
-          <li><strong>6+ years</strong> experience developing everything from static webpages to full-fledged mobile and desktop applications. Currently working full time at <a href="http://www.sweetlabs.com">Sweetlabs</a> in San Diego, California.</li>
+          <li><strong>6+ years</strong> experience developing everything from static webpages to full-fledged mobile and desktop applications. Currently looking for new opportunities!</li>
           <li><strong>Bachelor of Science</strong> in Interactive Media Design from the Art Institute of California, San Diego.</li>
           <li><strong>Comprehensive Front-end Developer</strong> focused on iterative development, behavior driven design, platform compatible implementation, and drawing fun guys like <span class="drawing">this. <img class="fluffy" src="images/fluffy.png" alt="Rawr!"></span></li>
         </ul>
       </div>
-      
+
       <div id="skills">
         <h3 class="sixteen columns">Skills</h3>
         <div class="one-third column skill">
@@ -122,8 +137,9 @@
           <h4>Supplementary</h4>
           <ul>
             <li>PHP</li>
-            <li>MySQL/MongoDB</li>
+            <li>Rails</li>
             <li>Objective C</li>
+            <li>MySQL/MongoDB</li>
             <li>Actionscript</li>
           </ul>
         </div>
@@ -132,106 +148,92 @@
           <h4>Current "Toolkit"</h4>
           <ul>
             <li>iTerm</li>
-            <li>Sublime</li>
+            <li>Atom</li>
             <li>Sketch &amp; Pixelmator</li>
             <li>Apple Final Cut Pro &amp; Motion</li>
           </ul>
         </div>
       </div>
     </div><!-- container -->
-    
+
   </div>
-  
+
   <div id="projects-title">
     <h3 class="container">Latest Projects</h3>
   </div><!-- projects-title -->
-  <div id="projects-window">
-    <div id="projects">
-
-      <div class="project">
-        <div class="container">
-          <div class="display eight columns offset-by-one">
-            <a href="http://inst.ag/">
-              <img src="images/project_images/instagrille.png" alt="Instagrille">
-            </a>
-          </div>
-          
-          <div class="description six columns">
-            <h4>Instagrille</h4>
-            <p>Instagram for your Windows PC. I inherited the flagship application for <a href="http://pokki.com">Pokki</a>. Between handling all the feature implementation and fixing bugs I managed to squeeze in enough time to refactor the framework so the next guy hopefully can make sense of everything.</p>
-
-            <a class="button" href="http://inst.ag/">Inst.ag</a>
-            <h5>Company:</h5>
-            <ul class="collaborators">
-              <li><a href="http://pokki.com"><img src="images/collaborators/pokki.png" title="Pokki" /><span class="tooltip">Pokki</span></a></li>
-            </ul>
-            
-          </div>
+  <div id="projects-window" class="container">
+    <div id="projects" >
+      <div class="project" href="http://roflpwnage.com/">
+        <a class="thumb one-third column" href="http://roflpwnage.com/">
+          <img src="images/project_images/roflpwnage.png" alt="Roflpwnage">
+        </a>
+        <div class="description two-thirds column">
+          <h4>Roflpwnage</h4>
+          <p>Ecommerce site for competitive gaming periphrials. Built on rails using slim, sass, purecss, fontawesome and a bunch of other goodies.</p>
+          <a class="button" href="http://roflpwnage.com/">Roflpwnage.com</a>
         </div>
       </div>
 
-      <div class="project">
-        <div class="container">
-          <div class="display eight columns offset-by-one">
-            <a href="http://jaradcomingdeer.com/lightgrid/">
-              <img src="images/project_images/lightgrid.png" alt="LightGrid">
-            </a>
-          </div>
-          
-          <div class="description six columns">
-            <h4>LightGrid</h4>
-            <p>I loved playing <a href="http://en.wikipedia.org/wiki/Lights_Out_(game)">Lights Out</a> as a kid. What started out as a simple prototype I ended up turning into a little javascript web game. Beat it on hard, <em>I dare ya</em>.</p>
-            <a class="button" href="http://jaradcomingdeer.com/lightgrid/">LightGrid Game</a>
-            <a class="button" href="http://github.com/TheBrownSound/LightGrid">GitHub Project Page</a>
-          </div>
+      <div class="project" href="http://sweetlabs.com/">
+        <a class="thumb one-third column" href="http://sweetlabs.com">
+          <img src="images/project_images/sweetlabs.png" alt="SweetLabs">
+        </a>
+        <div class="description two-thirds column">
+          <h4>SweetLabs</h4>
+          <p>Company website for <a href="http://sweetlabs.com">SweetLabs</a>. Built using <a href="http://foundation.zurb.com/">Foundation</a> and <a href="http://handlebarsjs.com/">Handlebars</a> and a matching Wordpress theme for the blog. Displays on pretty much every device you can think of along with a host of javascript enhancements.</p>
+          <a class="button" href="http://sweetlabs.com/">SweetLabs.com</a>
         </div>
       </div>
-      
-      <div class="project">
-        <div class="container">
-          <div class="display eight columns offset-by-one">
-            <a href="http://swipebright.com/">
-              <img src="images/project_images/swipebright.png" alt="SwipeBright">
-            </a>
-          </div>
-          
-          <div class="description six columns">
-            <h4>SwipeBright</h4>
-            <p>SwipeBright is a really simple iPhone brightness control. I found myself having trouble adjusting the brightness when I was driving, skiing, or doing something else active. It only took two days to write but it has saved me tons of headaches trying to turn up the brightness when I'm on the go.</p>
 
-            <a class="button" href="http://swipebright.com/">SwipeBright Homepage</a>
-          </div>
+      <div class="project" href="http://inst.ag/">
+        <a class="thumb one-third column" href="http://pixsta.com">
+          <img src="images/project_images/instagrille.png" alt="Instagrille">
+        </a>
+        <div class="description two-thirds column">
+          <h4>Pixsta/Instagrille</h4>
+          <p>Instagram for your Windows PC. I inherited the flagship application for <a href="http://pokki.com">Pokki</a>. Between handling all the feature implementation and fixing bugs I managed to squeeze in enough time to refactor the framework so the next guy hopefully can make sense of everything.</p>
+          <a class="button" href="http://pixsta.com">Pixsta.com</a>
         </div>
       </div>
-      
-      <div class="project">
-        <div class="container">
-          <div class="display eight columns offset-by-one">
-            <a href="http://qrawr.com/">
-              <img src="images/project_images/qrawr.png" alt="Qrawr">
-            </a>
-          </div>
-          
-          <div class="description six columns">
-            <h4>Qrawr</h4>
-            <p>An attempt to make QR codes cool. Enabled comments and pictures to be posted on a physical object using stickers. Unfortunately we recently shut the service down but it was an amazing learning experience.</p>
-            
-            <a class="button" href="http://www.kickstarter.com/projects/lytol/qrawr-comments-for-real-walls">Failed Kickstarter :(</a>
-            
-            <h5>Collaborators:</h5>
-            <ul class="collaborators">
-              <li><a href="http://jayswain.com"><img src="images/collaborators/jay.png" title="Jay Swain" /><span class="tooltip">Jay Swain</span></a></li>
-              <li><a href="http://swig505.com"><img src="images/collaborators/brian.png" title="Brian Smith" /><span class="tooltip">Brian Smith</span></a></li>
-              <li><a href="http://nicstauber.com"><img src="images/collaborators/nic.png" title="Nic Stauber"/><span class="tooltip">Nic Stauber</span></a></li>
-            </ul>
-          </div>
+
+      <div class="project" href="http://jaradcomingdeer.com/lightgrid/">
+        <a class="thumb one-third column" href="http://jaradcomingdeer.com/lightgrid/">
+          <img src="images/project_images/lightgrid.png" alt="LightGrid">
+        </a>
+        <div class="description two-thirds column">
+          <h4>LightGrid</h4>
+          <p>I loved playing <a href="http://en.wikipedia.org/wiki/Lights_Out_(game)">Lights Out</a> as a kid. What started out as a simple prototype I ended up turning into a little javascript web game. Beat it on hard, <em>I dare ya</em>.</p>
+          <a class="button" href="http://jaradcomingdeer.com/lightgrid/">LightGrid Game</a>
+          <a class="button" href="http://github.com/TheBrownSound/LightGrid">GitHub Project Page</a>
         </div>
       </div>
-      
+
+      <div class="project" href="http://swipebright.com/">
+        <a class="thumb one-third column" href="http://swipebright.com/">
+          <img src="images/project_images/swipebright.png" alt="SwipeBright">
+        </a>
+        <div class="description two-thirds column">
+          <h4>SwipeBright</h4>
+          <p>A really simple iPhone brightness control. I found myself having trouble adjusting the brightness when I was driving, skiing, or doing something else active. It only took two days to write but it has saved me tons of headaches trying to turn up the brightness when I'm on the go.</p>
+          <a class="button" href="http://swipebright.com/">SwipeBright Homepage</a>
+        </div>
+      </div>
+
+      <div class="project" href="http://qrawr.com/">
+        <a class="thumb one-third column" href="http://www.kickstarter.com/projects/lytol/qrawr-comments-for-real-walls">
+          <img src="images/project_images/qrawr.png" alt="Qrawr">
+        </a>
+        <div class="description two-thirds column">
+          <h4>Qrawr</h4>
+          <p>An attempt to make QR codes cool. Enabled comments and pictures to be posted on a physical object using stickers. Unfortunately we recently shut the service down but it was an amazing learning experience.</p>
+          <a class="button" href="http://www.kickstarter.com/projects/lytol/qrawr-comments-for-real-walls">Expired Kickstarter</a>
+        </div>
+      </div>
+
     </div><!-- projects -->
   </div><!-- projects-window -->
-  
-  
+
+
   <div id="footer-wrap">
     <div id="footer" class="container">
       <div id="footer-nav"class="eight columns">
@@ -243,7 +245,7 @@
         </ul>
       </div>
       <div class="eight columns">
-        <p>With love to <a href="http://github.com">GitHub</a>, <a href="http://getskeleton.com">Skeleton</a> and <a href="http://bxslider.com/">bxSlider</a>. &nbsp;ಠ‿ಠ<br />&copy; Jarad Comingdeer. All Rights Reserved 2014</p>
+        <p>With love to <a href="http://github.com">GitHub</a> and <a href="http://getskeleton.com">Skeleton</a>. &nbsp;ಠ‿ಠ<br />&copy; Jarad Comingdeer. All Rights Reserved 2014</p>
       </div>
     </div>
   </div>
@@ -251,8 +253,6 @@
   <!-- JS
   ================================================== -->
   <script type="text/javascript" src="js/lib/jquery-2.1.0.min.js"></script>
-  <script type="text/javascript" src="js/lib/jquery.bxSlider.min.js"></script>
-  <script type="text/javascript" src="js/lib/debounce.js"></script>
   <script type="text/javascript" src="js/jaradcomingdeer.js"></script>
 
   <script type="text/javascript">(function() {

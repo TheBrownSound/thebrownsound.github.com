@@ -5,12 +5,6 @@ var JaradApp = function(){
 	var currentCharacter = 0;
 	var characters = [];
 
-	function resizeSlider() {
-		var slide = slider.getCurrentSlide();
-		slider.reloadShow();
-		slider.goToSlide(slide);
-	}
-
 	function characterClicked() {
 		swapCharacters();
 		if (rotateTimer) {
@@ -30,12 +24,6 @@ var JaradApp = function(){
 	}
 
 	function init() {
-		slider = $('#projects').bxSlider({
-			controls: false,
-			pager: true,
-			pagerType: "full"
-		});
-
 		var characterWrapper = $('#little-jarads');
 		characterWrapper.children('img').each(function(){
 			characters.push(this);
@@ -43,15 +31,6 @@ var JaradApp = function(){
 
 		characterWrapper.click(characterClicked);
 		startCharacterRotation();
-
-		var skillGraph = $('#skill-list');
-		skillGraph.children('li').each(function(){
-			var rating = $(this).find('.rating').text();
-			this.style.width = rating + "0%";
-		});
-
-		// debounce resizing listener for performance
-		$(window).resize($.debounce(500, resizeSlider));
 	}
 
 	// Probably didn't need to module this but wth, why not.
