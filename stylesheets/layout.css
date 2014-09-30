@@ -16,11 +16,19 @@
 
 /* #Site Styles
 ================================================== */
-body {
-  background-color: #e6e6e6;
-  background-image: url('../images/background_repeat.png');
+
+html {
+  background-color: #ECF8FF;
+  background-image: url('../images/bg_fade.png');
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: repeat-x;
+}
+
+body {
+  background-color: transparent;
+  background-image: url('../images/bg_highlight.png');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 h3 {
