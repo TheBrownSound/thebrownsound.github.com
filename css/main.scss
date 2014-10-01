@@ -56,39 +56,40 @@ a:hover, a:focus {
   color: $color-link-hover;
 }
 
-.button.circle {
-  border-radius: 50%;
+.center {
+  text-align: center;
 }
 
-a.button, a.bx-pager-link {
+.button {
   color: #FFF;
   border: none;
   background: $color-link-default;
   text-shadow: none;
   transition: background 200ms ease-out;
+
+  img {
+    display: block;
+  }
+
+  &:hover, &:focus {
+    background: $color-link-hover;
+    color: #FFF;
+    border: none;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
 }
 
-a.button:hover, a.button:focus, a.bx-pager-link:hover {
-  background: $color-link-hover;
-  color: #FFF;
-  border: none;
-}
-
-a.button img {
-  display: block;
-}
-
-#info ul {
-  list-style: circle outside;
-  margin-left: 24px;
-}
-
-#info ul li {
-  position: relative;
-}
-
-.center {
-  text-align: center;
+.info {
+  ul {
+    list-style: circle outside;
+    margin-left: 24px;
+    li {
+      position: relative;
+    }
+  }
 }
 
 .column, .columns {
@@ -99,9 +100,20 @@ a.button img {
   padding-bottom: 30px;
 }
 
-.intro {
+.hello {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 10px 0 30px;
+
+  h1, h2 {
+    display: inline-block;
+    font-size: 1.8em;
+    line-height: inherit;
+  }
+
+  h1 {
+    font-weight: bold;
+    margin-right: 10px;
+  }
 }
 
 #little-jarads {
@@ -113,30 +125,19 @@ a.button img {
   overflow: hidden;
   cursor: pointer;
   cursor: hand;
-}
 
-#little-jarads img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 
-#little-jarads img.active {
-  opacity: 1;
-}
-
-#header h1, #header h2 {
-  display: inline-block;
-  font-size: 1.8em;
-  line-height: inherit;
-}
-
-#header h1 {
-  font-weight: bold;
-  margin-right: 10px;
+    &.active {
+      opacity: 1;
+    }
+  }
 }
 
 #skills {
