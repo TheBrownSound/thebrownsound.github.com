@@ -44,6 +44,10 @@ a:hover, a:focus {
   color: #de4f4f;
 }
 
+.button.circle {
+  border-radius: 50%;
+}
+
 a.button, a.bx-pager-link {
   color: #FFF;
   border: none;
@@ -266,14 +270,27 @@ a.button img {
   margin-left: 0;
 }
 
-#footer-nav ul li {
-  display: inline-block;
-  height: 40px;
-  margin-bottom: 0px;
-  margin-left: 20px;
+#info .contact-list {
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
-#footer-nav .button {
+#info .contact-list .button {
+  margin-bottom: 0;
+}
+
+.contact-list {
+  text-decoration: none;
+}
+
+.contact-list li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+}
+
+.contact-list .button {
   padding: 4px;
 }
 
@@ -312,7 +329,7 @@ a.button img {
       text-align: center;
     }
 
-    #footer-nav ul li {
+    .contact-list li {
       margin-left: 10px;
       margin-right: 10px;
     }
