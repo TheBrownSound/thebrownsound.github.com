@@ -1,0 +1,284 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	min-width: 600px;
+	min-height: 640px;
+}
+
+html {
+	background: #0b4140 url("../images/background_repeat.png") top left repeat;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: url("../images/background.png") top left no-repeat;
+	min-width: 600px;
+	min-height: 600px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.logo {
+	margin: 0px auto;
+	padding-right: 20px;
+	z-index: 2;
+	position: relative;
+}
+
+.button {
+	background: #e7ebb4;
+	border: 2px solid #000;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: #2a9c9b;
+	color: #e7ebb4;
+}
+
+#wrapper {
+	background: url("../images/bulbs.png") top center repeat-x;
+	padding-bottom: 80px;
+}
+
+#wrapper .leaderboard {
+	-webkit-animation: show 1s;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	padding: 6px 6px 2px 6px;
+	border-top: 0px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#wrapper.Easy .leaderboard {
+	display: none;
+}
+
+#header {
+	height: 120px;
+	text-align: center;
+}
+
+#lights {
+	background: #3a3a3a url("../images/light_background_repeat.png") top left repeat;
+	border-radius: 10px;
+	border: 2px solid #000;
+	clear: both;
+	margin: 0px auto;
+	padding: 20px;
+	position: relative;
+	min-height: 250px;
+	width: 280px;
+	-webkit-box-shadow: 0px 0px 300px 100px rgba(51, 142, 139, .5);
+}
+
+#lights #win {
+	background: #3a3a3a url("../images/winscreen.png") top center no-repeat;
+	border: 2px solid #000;
+	border-radius: 10px;
+	color: #2a9c9b;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	line-height: 50px;
+	margin-top: -127px;
+	margin-left: -120px;
+	height: 250px;
+	text-align: center;
+	width: 236px;
+}
+
+#lights #win a.button {
+	display: block;
+	background-image: url("../images/light_toggle.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	border-radius: 10px;
+	line-height: 50px;
+	padding-left: 50px;
+	height: 50px;
+	text-align: center;
+	width: 140px;
+	margin-top: 180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lights.complete {
+	-webkit-box-shadow: 0px 0px 300px 100px rgba(51, 142, 139, 1);
+}
+
+#lights.complete #win {
+	-webkit-animation: show 1s;
+	display: inline-block;
+}
+
+#lights a.light, #lights.complete a.light:hover {
+	background-image: url("../images/bulb_button.png");
+	-webkit-animation: on 1s;
+	background-color: #e7ebb4;
+	border: 2px solid #000;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 5px;
+	height: 46px;
+	width: 46px;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(231, 235, 180, .8);
+}
+
+#lights a.light:hover, a.light.off:hover {
+	background-image: url("../images/light_toggle.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#lights a.light.off {
+	-webkit-animation: off 1s;
+	background-color: #333;
+	-webkit-box-shadow: none;
+}
+
+#lights a.light.fade {
+	visibility: hidden;
+}
+
+#lights.complete a.light:hover {
+	cursor: default;
+}
+
+#wrapper #tutorial {
+	display: none;
+	margin: 20px 50px;
+	text-align: center;
+}
+
+#wrapper.Easy #tutorial {
+	display: block;
+}
+
+#tutorial {
+	color: #e7ebb4;
+	font-size: 20px;
+	line-height: 20px;
+	position: relative;
+	text-shadow: 0px 0px 10px #81c3c1;
+	z-index: 2;
+}
+
+#tutorial b {
+	display: block;
+}
+
+#footer {
+	background-color: rgba(0,0,0,.6);
+	height: 80px;
+	font-weight: 700;
+	min-width: 600px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+#difficulty {
+	display: inline-block;
+	margin: 20px 20px 0px 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+#difficulty li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: block;
+	float: left;
+}
+
+#difficulty li a {
+	margin: 0px;
+	display: block;
+	text-align: center;
+	padding: 6px 20px;
+}
+
+#difficulty li:first-child a {
+	border-right: 0px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	
+}
+
+#difficulty li:last-child a {
+	border-left: 0px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#difficulty li a:hover, #difficulty li a.selected {
+	background-color: #2a9c9b;
+	color: #e7ebb4;
+}
+
+#footer #timer {
+	height: 60px;
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 10px 20px 10px 10px;
+}
+
+#footer #timer span {
+	display: block;
+}
+
+#footer #timer .time {
+	color: #2a9c9b;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+#footer #timer .best-time {
+	color: #e7ebb4;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+@-webkit-keyframes on {
+from {
+	background-color: #333;
+	-webkit-box-shadow: none;
+	}
+to {
+	background-color: #e7ebb4;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(231, 235, 180, .8);
+	}
+}
+
+@-webkit-keyframes off {
+from {
+	background-color: #e7ebb4;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(231, 235, 180, .8);
+	}
+to {
+	background-color: #333;
+	-webkit-box-shadow: none;
+	}
+}
+
+@-webkit-keyframes show {
+from {opacity: 0;}
+to   {opacity: 1;}
+}
+
