@@ -14,22 +14,20 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-default: 30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$color-text: #444444;
+$color-link-default: #B74242;
+$color-link-hover: #DE4F4F;
+$color-accent: #152B39;
+$color-background: #ECF8FF;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
 
 html {
-  background-color: #ECF8FF;
+  background-color: $color-background;
   background-image: url('../images/bg_fade.png');
   background-position: top center;
   background-repeat: repeat-x;
@@ -40,6 +38,10 @@ body {
   background-image: url('../images/bg_highlight.png');
   background-position: top center;
   background-repeat: no-repeat;
+  font: 14px/21px 'Signika', Helvetica, Arial, sans-serif;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 h3 {
@@ -47,12 +49,12 @@ h3 {
 }
 
 a, a:visited {
-  color: #B74242;
+  color: $color-link-default;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #de4f4f;
+  color: $color-link-hover;
 }
 
 .button.circle {
@@ -62,13 +64,13 @@ a:hover, a:focus {
 a.button, a.bx-pager-link {
   color: #FFF;
   border: none;
-  background: #B74242;
+  background: $color-link-default;
   text-shadow: none;
   transition: background 200ms ease-out;
 }
 
 a.button:hover, a.button:focus, a.bx-pager-link:hover {
-  background: #de4f4f;
+  background: $color-link-hover;
   color: #FFF;
   border: none;
 }
@@ -94,14 +96,11 @@ a.button img {
   margin-bottom: 10px;
 }
 
-/* #Page Styles
-================================================== */
-
 #info-wrap {
   padding-bottom: 30px;
 }
 
-#header {
+.intro {
   text-align: center;
   padding-bottom: 30px;
 }
@@ -158,7 +157,7 @@ a.button img {
 }
 
 .skill img {
-  background-color: #152b39;
+  background-color: $color-accent;
   border-radius: 20px;
   display: inline-block;
   float: left;
