@@ -8,5 +8,8 @@ url: "http://jaradcomingdeer.com"
 twitter_username: thebrownsound
 github_username:  thebrownsound
 
+collections:
+- projects
+
 # Build settings
 markdown: kramdown

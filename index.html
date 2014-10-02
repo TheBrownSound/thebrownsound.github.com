@@ -87,4 +87,15 @@ layout: home
   </div>
 </div>
 
-{% include projects.html %}
+<section class="projects">
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% for project in projects %}
+  <div class="project"
+    <a href="{{ project.link }}">
+      <img alt="{{ project.title }} "src="{{ project.screenshot }}" />
+    </a>
+    <h4>{{ project.title }}</h4>
+    {{ project.content }}
+  </div>
+{% endfor %}
+</div>
