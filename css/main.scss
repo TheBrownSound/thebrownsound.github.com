@@ -22,6 +22,11 @@ $color-background: #ECF8FF;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$breakpoint-small: 568px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+$breakpoint-xlarge: 1280px;
+
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: $font-family;
@@ -49,6 +54,11 @@ h3 {
   font-size: 2rem;
   font-weight: normal;
   border-bottom: 2px dotted #777;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
 a, a:visited {
@@ -170,7 +180,7 @@ a:hover, a:focus {
     h4 {
       display: inline-block;
       line-height: 40px;
-      margin: 0 0 $spacing-default/2 0
+      margin: 0 0 $spacing-default/2 0;
     }
 
     img {
@@ -264,35 +274,9 @@ a:hover, a:focus {
   margin-bottom: 0px;
 }
 
-#footer-wrap {
-  padding: 10px 0px;
-}
-
 footer {
   border-top: 2px dotted #777;
-  padding-top: $spacing-default;
-}
-
-#footer-nav {
-  float: right;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 21px;
-  text-align: right;
-}
-
-#footer-nav ul {
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-#info .contact-list {
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-#info .contact-list .button {
-  margin-bottom: 0;
+  padding: $spacing-default 0;
 }
 
 .contact-list {
@@ -304,7 +288,7 @@ footer {
   padding: 0;
   li {
     display: inline-block;
-    margin: 0;
+    margin: 0 4px;
     padding: 0;
 
     a {
@@ -327,32 +311,44 @@ footer {
   left: 10px;
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  #header h1 {
-    font-size: 2.2em;
-    margin-right: 0px;
+@media screen and (max-width: $breakpoint-medium) {
+  .hello {
+    h1 {
+      font-size: 2.2em;
+      margin-right: 0px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+    }
   }
 
-  #header h2 {
-    font-size: 1.4em;
+  .projects {
+    .description {
+      & > * {
+        margin-left: 0;
+      }
+    }
   }
 
-  #footer, #footer-nav {
+  footer {
     text-align: center;
   }
-
 }
 
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+@media screen and (min-width: $breakpoint-medium) {
+  footer {
+    .note p {
+      margin-top: 0;
     }
+
+    .contact-list {
+      display: inline-block;
+      float: right;
+      li {
+        margin-left: 8px;
+        margin-right: 0;
+      }
+    }
+  }
 }
