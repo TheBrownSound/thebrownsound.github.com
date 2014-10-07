@@ -75,9 +75,12 @@ a:hover, a:focus {
 .button {
   color: #FFF;
   border: none;
+  border-radius: 4px;
   background: $color-link-default;
+  display: inline-block;
   text-shadow: none;
   transition: background 200ms ease-out;
+  padding: 10px 14px;
 
   img {
     display: block;
@@ -87,6 +90,10 @@ a:hover, a:focus {
     background: $color-link-hover;
     color: #FFF;
     border: none;
+  }
+
+  &:visited {
+    color:  #FFF;
   }
 
   &.circle {
@@ -143,6 +150,8 @@ a:hover, a:focus {
 }
 
 .info {
+
+  margin-bottom: $spacing-default;
 
   .priorities > * {
     margin-right: $spacing-default / 2;
