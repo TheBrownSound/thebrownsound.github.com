@@ -1,22 +1,8 @@
-<footer id="footer-wrap">
-  <div id="footer" class="container">
+<footer>
+  {% include contact_list.html %}
 
-    <div id="footer-nav" class="eight columns">
-      <ul class="contact-list">
-      {% if site.twitter_username %}
-        <li><a class="button circle" href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><img src="images/twitter_icon.png" alt="Twitter" /></a></li>
-      {% endif %}
-      {% if site.github_username %}
-        <li><a class="button circle" href="https://github.com/{{ site.github_username }}" title="GitHub"><img src="images/github_icon.png" alt="GitHub" /></a></li>
-      {% endif %}
-        <li><a class="button circle" href="http://www.linkedin.com/in/jcomingdeer" title="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn" /></a></li>
-        <li><a class="button circle" href="mailto:{{ site.email }}" title="email"><img src="images/email_icon.png" alt="Email" /></a></li>
-      </ul>
-    </div>
-
-    <div class="eight columns">
-      <p>With love to <a href="http://github.com">GitHub</a> and <a href="http://getskeleton.com">Skeleton</a>. &nbsp;ಠ‿ಠ<br />&copy; Jarad Comingdeer. All Rights Reserved 2014</p>
-    </div>
-
+  <div class="note eight columns">
+    <p>With love to <a href="http://github.com">GitHub</a> and <a href="http://getskeleton.com">Skeleton</a>. &nbsp;ಠ‿ಠ<br />&copy; Jarad Comingdeer. All Rights Reserved 2014</p>
   </div>
+
 </footer>

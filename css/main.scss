@@ -1,18 +1,16 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Main site styles
 ---
 @charset "utf-8";
 
-@import
-  "base.css"
-;
-
-// Site Variables
-$base-font-family: Helvetica, Arial, sans-serif;
+// Fonts
+$font-family: 'Signika', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+// Layout
+$site-max-width: 1000px;
 $spacing-default: 30px;
 
 $color-text: #444444;
@@ -24,6 +22,10 @@ $color-background: #ECF8FF;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: $font-family;
+}
 
 html {
   background-color: $color-background;
@@ -37,13 +39,15 @@ body {
   background-image: url('../images/bg_highlight.png');
   background-position: top center;
   background-repeat: no-repeat;
-  font: 14px/21px 'Signika', Helvetica, Arial, sans-serif;
+  font-size: 14px;
   color: $color-text;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
 
 h3 {
+  font-size: 2rem;
+  font-weight: normal;
   border-bottom: 2px dotted #777;
 }
 
@@ -80,6 +84,13 @@ a:hover, a:focus {
   &.circle {
     border-radius: 50%;
   }
+}
+
+
+.site-wrapper {
+  max-width: $site-max-width;
+  padding: 0 $spacing-default;
+  margin: 0 auto;
 }
 
 .info {
