@@ -1,7 +1,7 @@
 ---
 title: LightGrid
 date: 2013-06-24
-link: http://roflpwnage.com/
+link: http://jaradcomingdeer.com/lightgrid/
 screenshot: /images/project_images/lightgrid.png
 ---
 
