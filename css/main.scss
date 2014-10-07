@@ -188,35 +188,31 @@ a:hover, a:focus {
   margin-left: 33px;
 }
 
-#projects-title {
-  padding-bottom: 10px;
+
+.projects {
+
+  .description {
+    & > * {
+      margin-left: $spacing-default/2;
+    }
+  }
+  
+  h4 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-#projects-window {
-  position: relative;
-  overflow: hidden;
-}
-
-#projects h4 {
-  font-size: 26px;
-}
-
-#projects {
-  overflow: hidden;
-  margin: 0;
-  padding: 3em 0;
-  width: 100%;
-  list-style: none;
-}
-
-#projects .project {
+.projects .project {
   position: relative;
   z-index: 1;
   display: inline-block;
   cursor: pointer;
+  margin-bottom: $spacing-default;
 }
 
-#projects .project img {
+.projects .project .media img {
   border-radius: 10px;
   position: relative;
   display: block;
@@ -270,12 +266,9 @@ a:hover, a:focus {
   padding: 10px 0px;
 }
 
-#footer {
+footer {
   border-top: 2px dotted #777;
-}
-
-#footer p {
-  margin-top: 20px;
+  padding-top: $spacing-default;
 }
 
 #footer-nav {
