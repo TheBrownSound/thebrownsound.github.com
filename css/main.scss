@@ -19,9 +19,6 @@ $color-link-hover: #DE4F4F;
 $color-accent: #152B39;
 $color-background: #ECF8FF;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
 $breakpoint-small: 568px;
 $breakpoint-medium: 768px;
 $breakpoint-large: 1024px;
@@ -54,6 +51,7 @@ h3 {
   font-size: 2rem;
   font-weight: normal;
   border-bottom: 2px dotted #777;
+  margin: 0 0 $spacing-default;
 }
 
 h4 {
@@ -103,34 +101,6 @@ a:hover, a:focus {
   margin: 0 auto;
 }
 
-.info {
-
-  .priorities > * {
-    margin-right: $spacing-default / 2;
-  }
-
-  .details > * {
-    margin-left: $spacing-default / 2;
-  }
-
-  ul {
-    list-style: circle outside;
-    margin: 0 0 0 24px;
-    padding: 0;
-    li {
-      position: relative;
-    }
-  }
-}
-
-.column, .columns {
-  margin-bottom: 10px;
-}
-
-#info-wrap {
-  padding-bottom: 30px;
-}
-
 .hello {
   text-align: center;
   padding: 10px 0 30px;
@@ -152,8 +122,8 @@ a:hover, a:focus {
   position: relative;
   display: block;
   margin: 10px auto;
-  width: 218px;
-  height: 375px;
+  width: 190px;
+  height: 350px;
   overflow: hidden;
   cursor: pointer;
   cursor: hand;
@@ -168,6 +138,26 @@ a:hover, a:focus {
 
     &.active {
       opacity: 1;
+    }
+  }
+}
+
+.info {
+
+  .priorities > * {
+    margin-right: $spacing-default / 2;
+  }
+
+  .details > * {
+    margin-left: $spacing-default / 2;
+  }
+
+  ul {
+    list-style: circle outside;
+    margin: 0 0 0 24px;
+    padding: 0;
+    li {
+      position: relative;
     }
   }
 }

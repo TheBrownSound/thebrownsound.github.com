@@ -28,7 +28,7 @@ var JaradApp = function(){
 		characterWrapper.children('img').each(function(){
 			characters.push(this);
 		});
-
+		
 		characterWrapper.click(characterClicked);
 		startCharacterRotation();
 	}
