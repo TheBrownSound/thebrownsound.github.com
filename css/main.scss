@@ -94,9 +94,19 @@ a:hover, a:focus {
 }
 
 .info {
+
+  .priorities > * {
+    margin-right: $spacing-default / 2;
+  }
+
+  .details > * {
+    margin-left: $spacing-default / 2;
+  }
+
   ul {
     list-style: circle outside;
-    margin-left: 24px;
+    margin: 0 0 0 24px;
+    padding: 0;
     li {
       position: relative;
     }
@@ -119,6 +129,7 @@ a:hover, a:focus {
     display: inline-block;
     font-size: 1.8em;
     line-height: inherit;
+    margin: 0;
   }
 
   h1 {
@@ -151,43 +162,34 @@ a:hover, a:focus {
   }
 }
 
-#skills {
-  padding-top: 30px;
-}
+.skills {
 
-#skills h3 {
-  margin: 30px 10px 8px;
-}
+  .skill {
+    margin-bottom: $spacing-default;
 
-#skills .skill:nth-child(4n+1) {
-  clear: both;
-}
+    h4 {
+      display: inline-block;
+      line-height: 40px;
+      margin: 0 0 $spacing-default/2 0
+    }
 
-.skill {
-  margin-bottom: 20px;
-}
+    img {
+      background-color: $color-accent;
+      border-radius: 20px;
+      display: inline-block;
+      float: left;
+      padding: 4px;
+      margin-right: 10px;
+      width: 32px;
+      height: 32px;
+    }
 
-.skill img {
-  background-color: $color-accent;
-  border-radius: 20px;
-  display: inline-block;
-  float: left;
-  padding: 4px;
-  margin-right: 10px;
-  width: 32px;
-  height: 32px;
+    ul {
+      margin: 0 $spacing-default 0 33px;
+      padding: 0;
+    }
+  }
 }
-
-.skill h4 {
-  display: inline-block;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-
-#info .skill ul {
-  margin-left: 33px;
-}
-
 
 .projects {
 
@@ -196,7 +198,7 @@ a:hover, a:focus {
       margin-left: $spacing-default/2;
     }
   }
-  
+
   h4 {
     font-size: 26px;
     margin-top: 0;
