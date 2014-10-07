@@ -304,15 +304,21 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.contact-list li {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin: 0 20px;
-}
+.contact-list {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 
-.contact-list .button {
-  padding: 4px;
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+    }
+  }
 }
 
 .drawing {
@@ -341,10 +347,6 @@ a:hover, a:focus {
     text-align: center;
   }
 
-  .contact-list li {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
 
 // Using media queries with like this:
