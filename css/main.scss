@@ -279,12 +279,11 @@ footer {
 }
 
 .contact-list {
-  text-decoration: none;
-}
-
-.contact-list {
   margin: 0;
   padding: 0;
+  text-align: center;
+  text-decoration: none;
+
   li {
     display: inline-block;
     margin: 0 4px;
@@ -292,9 +291,9 @@ footer {
 
     a {
       display: block;
-      width: 40px;
-      height: 40px;
-      padding: 4px;
+      width: 50px;
+      height: 39px;
+      padding: 11px 0 0;
     }
   }
 }
