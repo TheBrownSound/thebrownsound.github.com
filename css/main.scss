@@ -146,6 +146,7 @@ a:hover, a:focus {
     opacity: 0;
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
+    max-width: 100%;
 
     &.active {
       opacity: 1;
