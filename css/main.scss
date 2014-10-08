@@ -155,15 +155,10 @@ a:hover, a:focus {
 }
 
 .info {
+  margin: 0 $spacing-default * -1 $spacing-default;
 
-  margin-bottom: $spacing-default;
-
-  .priorities > * {
-    margin-right: $spacing-default / 2;
-  }
-
-  .details > * {
-    margin-left: $spacing-default / 2;
+  .info-list {
+    padding: 0 $spacing-default;
   }
 
   ul {
