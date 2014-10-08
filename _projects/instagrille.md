@@ -5,6 +5,6 @@ link: http://pixsta.com/
 screenshot: /images/project_images/instagrille.png
 ---
 
-Instagram for your Windows PC. I inherited the flagship application for [Pokki](http://pokki.com). Between handling all the feature implementation and fixing bugs I managed to squeeze in enough time to refactor the framework so the next guy hopefully can make sense of everything.
+Instagram for your Windows PC. I inherited the [Pokki](http://pokki.com) app while working at [SweetLabs](http://sweetlabs.com).
 
-<a class="button" href="http://pixsta.com/">App Website</a>
+<a class="button" href="http://pixsta.com/"><i class="fa fa-external-link fa-lg"></i> App Website</a>
