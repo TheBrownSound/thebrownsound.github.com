@@ -77,12 +77,8 @@ a:hover, a:focus {
 }
 
 .button {
-  color: #FFF;
-  border: 0;
   border-radius: 4px;
-  background: $color-link-default;
   display: inline-block;
-  text-shadow: none;
   transition: background 200ms ease-out;
   padding: 10px 14px;
 
@@ -90,18 +86,35 @@ a:hover, a:focus {
     display: block;
   }
 
-  &:hover, &:focus {
-    background: $color-link-hover;
-    color: #FFF;
-    border: 0;
-  }
-
-  &:visited {
-    color:  #FFF;
-  }
-
   &.circle {
     border-radius: 50%;
+  }
+
+  &.primary {
+    background: $color-link-default;
+    border: 0;
+    color: #FFF;
+
+    &:hover, &:focus {
+      background: $color-link-hover;
+      color: #FFF;
+      border: 0;
+    }
+
+    &:visited {
+      color:  #FFF;
+    }
+  }
+
+  &.secondary {
+    background: transparent;
+    border: 1px solid $color-link-default;
+    color: $color-link-default;
+
+    &:hover, &:focus {
+      color: $color-link-hover;
+      border-color: $color-link-hover;
+    }
   }
 }
 
