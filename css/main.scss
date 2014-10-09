@@ -47,6 +47,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+section {
+  margin-bottom: $spacing-default;
+}
+
 h3 {
   font-size: 2rem;
   font-weight: normal;
