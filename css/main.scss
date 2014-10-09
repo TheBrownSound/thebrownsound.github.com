@@ -306,6 +306,7 @@ a:hover, a:focus {
 .about {
   p {
     font-size: 1.1em;
+    margin-left: 140px + $spacing-default;
   }
 
   .about-image {
@@ -313,6 +314,7 @@ a:hover, a:focus {
     max-width: 140px;
     margin-right: $spacing-default;
     margin-bottom: $spacing-default;
+    margin-top: $spacing-default / -2;
   }
 }
 
@@ -370,6 +372,24 @@ footer {
       & > * {
         margin-left: 0;
       }
+    }
+
+    .button.secondary {
+      display: block;
+      text-align: center;
+      margin-bottom: $spacing-default / 2;
+    }
+  }
+
+  .about {
+    p {
+      margin-left: 0;
+    }
+
+    .about-image {
+      float: none;
+      display: block;
+      margin: 0 auto;
     }
   }
 
