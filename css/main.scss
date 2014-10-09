@@ -290,6 +290,12 @@ a:hover, a:focus {
   margin-bottom: 0px;
 }
 
+.about {
+  p {
+    font-size: 1.1em;
+  }
+}
+
 footer {
   border-top: 2px dotted #777;
   padding: $spacing-default 0;
