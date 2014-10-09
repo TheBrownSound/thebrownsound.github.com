@@ -169,6 +169,19 @@ a:hover, a:focus {
       opacity: 1;
     }
   }
+
+  &:before {
+    background-color: #000;
+    opacity: 0.2;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .info {
