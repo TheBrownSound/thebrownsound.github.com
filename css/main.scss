@@ -249,6 +249,22 @@ a:hover, a:focus {
   }
 }
 
+.site-project {
+  border: 1px dashed;
+  border-radius: 4px;
+  text-align: center;
+
+  p {
+    padding: 0 $spacing-default / 2;
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  .button {
+    margin: 0 $spacing-default / 2;
+  }
+}
+
 .projects .project {
   position: relative;
   z-index: 1;
