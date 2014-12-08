@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>17Hats Email Templatizer</title>
+    <link rel="stylesheet" href="assets/css/templatizer.css">
+  </head>
+  <body>
+    <div class="content-wrapper container">
+      <header class="row">
+        <h1>17Hats Email Templatizer</h1>
+      </header>
+      <div id="email-blocks">
+      </div>
+      <footer class="row">
+        <div id="template-actions" class="actions well"><a id="preview" class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span> Preview</a><a class="download btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-download"></span> Download HTML</a></div><a id="insert-btn" class="btn btn-success btn-lg"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span> Insert Block</a>
+      </footer>
+      <div id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewModal" aria-hidden="true" class="modal fade preview-modal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Email Template Preview</h4>
+            </div>
+            <div id="previewContent" class="modal-body"></div>
+            <div class="modal-footer"><a class="download btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-download"></span> Download HTML</a></div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="assets/js/templatizer.js"></script>
+    </div>
+  </body>
+</html>
