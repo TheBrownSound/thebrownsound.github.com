@@ -1,6 +1,6 @@
 ---
 title: Jarad Comingdeer
-timezone: UTC
+timezone: America/Los_Angeles
 collections:
   posts:
     title: Posts
@@ -16,7 +16,7 @@ description: 'I am a front-end web developer based in San Diego, California. I l
   building web applications.
 
 '
-baseurl: ''
+baseurl: 
 url: http://jaradcomingdeer.com
 twitter_username: thebrownsound
 github_username: thebrownsound
