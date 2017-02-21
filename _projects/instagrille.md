@@ -1,8 +1,8 @@
 ---
 title: Instagrille/Pixsta
-date: 2013-07-02
+date: 2013-07-02 00:00:00 Z
 link: http://pixsta.com/
-screenshot: /images/project_images/instagrille.png
+screenshot: "/images/project_images/instagrille.png"
 ---
 
 Instagram for your Windows PC. I inherited the [Pokki](http://pokki.com) app while working at [SweetLabs](http://sweetlabs.com).

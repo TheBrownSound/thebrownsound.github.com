@@ -1,8 +1,8 @@
 ---
 title: LightGrid
-date: 2013-06-24
+date: 2013-06-24 00:00:00 Z
 link: http://jaradcomingdeer.com/lightgrid/
-screenshot: /images/project_images/lightgrid.png
+screenshot: "/images/project_images/lightgrid.png"
 ---
 
 I loved playing [Lights Out](http://en.wikipedia.org/wiki/Lights_Out_%28game%29) as a kid. What started out as a simple prototype I ended up turning into a little javascript web game. Try and beat it on hard!

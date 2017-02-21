@@ -1,15 +1,23 @@
-# Site settings
+---
 title: Jarad Comingdeer
-email: jarad@jcomingdeer.com
-description: >
-  I am a front-end web developer based in San Diego, California. I love building web applications.
-baseurl: ""
-url: "http://jaradcomingdeer.com"
-twitter_username: thebrownsound
-github_username:  thebrownsound
-
+timezone: UTC
 collections:
-- projects
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+email: jarad@jcomingdeer.com
+description: 'I am a front-end web developer based in San Diego, California. I love
+  building web applications.
 
-# Build settings
+'
+baseurl: ''
+url: http://jaradcomingdeer.com
+twitter_username: thebrownsound
+github_username: thebrownsound
 markdown: kramdown
